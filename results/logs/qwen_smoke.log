@@ -1,0 +1,24 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Qwen/Qwen2.5-0.5B-Instruct: 300 runs in manifest, 0 done, 300 to go -> /home/user/workspace/llm-reliability/results/generations/smoke_n50_w0_o2_s2__qwen2.5-0.5b.jsonl
+[16/300] greedy seed=None batch 21.9s  eta 6.5 min
+[32/300] greedy seed=None batch 32.2s  eta 7.6 min
+[48/300] greedy seed=None batch 15.8s  eta 6.1 min
+[64/300] greedy seed=None batch 24.6s  eta 5.8 min
+[80/300] greedy seed=None batch 21.9s  eta 5.3 min
+[96/300] greedy seed=None batch 40.1s  eta 5.5 min
+[100/300] greedy seed=None batch 3.4s  eta 5.3 min
+[116/300] sampled seed=0 batch 20.3s  eta 4.8 min
+[132/300] sampled seed=0 batch 31.7s  eta 4.5 min
+[148/300] sampled seed=0 batch 17.5s  eta 3.9 min
+[164/300] sampled seed=0 batch 25.5s  eta 3.5 min
+[180/300] sampled seed=0 batch 22.3s  eta 3.1 min
+[196/300] sampled seed=0 batch 40.4s  eta 2.8 min
+[200/300] sampled seed=0 batch 3.9s  eta 2.7 min
+[216/300] sampled seed=1 batch 20.6s  eta 2.2 min
+[232/300] sampled seed=1 batch 31.5s  eta 1.8 min
+[248/300] sampled seed=1 batch 17.0s  eta 1.4 min
+[264/300] sampled seed=1 batch 25.0s  eta 0.9 min
+[280/300] sampled seed=1 batch 23.0s  eta 0.5 min
+[296/300] sampled seed=1 batch 39.9s  eta 0.1 min
+[300/300] sampled seed=1 batch 3.8s  eta 0.0 min
+{"model": "qwen2.5-0.5b", "manifest": "data/manifests/smoke_n50_w0_o2_s2.jsonl", "n_runs": 300, "wall_seconds": 503.7, "backend": "transformers"}

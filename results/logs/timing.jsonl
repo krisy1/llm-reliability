@@ -1,0 +1,6 @@
+{"model": "smollm2-360m", "manifest": "data/manifests/smoke_n50_w0_o2_s2.jsonl", "n_runs": 300, "wall_seconds": 474.6, "backend": "transformers"}
+{"model": "qwen2.5-0.5b", "manifest": "data/manifests/smoke_n50_w0_o2_s2.jsonl", "n_runs": 300, "wall_seconds": 503.7, "backend": "transformers"}
+{"model": "qwen2.5-0.5b", "manifest": "data/manifests/pilot_prefill_greedy.jsonl", "n_runs": 100, "wall_seconds": 163.8, "backend": "transformers"}
+{"model": "qwen2.5-0.5b", "manifest": "data/manifests/pilot_prefill_greedy.jsonl", "n_runs": 100, "wall_seconds": 162.9, "backend": "transformers"}
+{"model": "smollm2-360m", "manifest": "data/manifests/pilot_prefill_greedy.jsonl", "n_runs": 100, "wall_seconds": 161.2, "backend": "transformers"}
+{"model": "smollm2-360m", "manifest": "data/manifests/pilot_prefill_greedy.jsonl", "n_runs": 100, "wall_seconds": 161.4, "backend": "transformers"}

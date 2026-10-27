@@ -1,0 +1,37 @@
+# Pin a revision (commit hash) for every model before the real runs, and run all models at the same dtype.
+# Find the hash on the model page: "Files and versions" -> latest commit.
+dtype: float16               # T4 has no bfloat16 support; use float16 for every model
+
+models:
+  # Smoke-test model (fits on CPU); not part of the ranking analysis.
+  - name: qwen2.5-0.5b
+    hf_id: Qwen/Qwen2.5-0.5B-Instruct
+    revision: main
+    role: smoke_test
+  - name: smollm2-360m
+    hf_id: HuggingFaceTB/SmolLM2-360M-Instruct
+    revision: main
+    role: smoke_test
+
+  # Ranking set (about 2-4B, different families / post-training recipes).
+  - name: qwen2.5-3b
+    hf_id: Qwen/Qwen2.5-3B-Instruct
+    revision: main
+    role: ranking
+  - name: llama3.2-3b
+    hf_id: meta-llama/Llama-3.2-3B-Instruct     # gated: accept the licence on Hugging Face first
+    revision: main
+    role: ranking
+  - name: phi3.5-mini
+    hf_id: microsoft/Phi-3.5-mini-instruct
+    revision: main
+    role: ranking
+  - name: smollm3-3b
+    hf_id: HuggingFaceTB/SmolLM3-3B
+    revision: main
+    role: ranking
+    chat_template_kwargs: {enable_thinking: false}   # otherwise it "thinks" first and blows past 8 tokens
+  - name: granite3.3-2b
+    hf_id: ibm-granite/granite-3.3-2b-instruct
+    revision: main
+    role: ranking

@@ -1,0 +1,16 @@
+{
+  "n_items": 50,
+  "models": [
+    "qwen2.5-0.5b",
+    "smollm2-360m"
+  ],
+  "runs_per_item": 6,
+  "H1_mean_minus_reliable_pts": {
+    "qwen2.5-0.5b": 13.0,
+    "smollm2-360m": 11.0
+  },
+  "H1_holds_for_all": false,
+  "n_pairs": 1,
+  "discordant_pairs_greedy_vs_reliable": 1,
+  "H3_significant_discordant_pairs": 0
+}

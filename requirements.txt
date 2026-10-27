@@ -1,0 +1,11 @@
+torch
+transformers>=4.45
+accelerate
+datasets
+pyarrow
+pandas
+numpy
+scipy
+matplotlib
+pyyaml
+pytest
