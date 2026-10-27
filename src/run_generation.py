@@ -142,12 +142,13 @@ def main() -> None:
     ap.add_argument("--batch-size", type=int, default=16)
     ap.add_argument("--device", default=None)
     ap.add_argument("--prefill", default=None, help="override prompt.assistant_prefill (pilot comparisons)")
+    ap.add_argument("--config", default=None, help="configs/experiment_bfcl.yaml for BFCL")
     ap.add_argument("--tag", default="", help="suffix for the output file, e.g. _prefill")
     a = ap.parse_args()
 
     global PREFILL
     m, dtype = model_cfg(a.model)
-    exp = load_yaml("configs/experiment.yaml")
+    exp = load_yaml(a.config or "configs/experiment.yaml")
     dec = exp["decoding"]
     PREFILL = a.prefill if a.prefill is not None else (exp.get("prompt", {}) or {}).get("assistant_prefill", "")
     rows = read_jsonl(a.manifest)

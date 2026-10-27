@@ -35,7 +35,7 @@ from pathlib import Path
 
 import numpy as np
 
-from .common import DATA, LETTERS, item_seed, load_yaml, read_jsonl, write_jsonl
+from .common import DATA, LETTERS, experiment_config, item_seed, read_jsonl, task_of, write_jsonl
 
 # ---------------------------------------------------------------- orders
 
@@ -60,16 +60,17 @@ def apply_order(options: list[str], gold_index: int, perm: list[int]) -> tuple[l
     return new_options, new_gold
 
 
-def cmd_orders(items_path: Path) -> None:
-    cfg = load_yaml("configs/experiment.yaml")
+def cmd_orders(items_path: Path, config: str | None = None) -> None:
+    """Works for both tasks: MMLU-Pro options, or BFCL candidate functions (n_options/answer_index)."""
+    cfg = experiment_config(config)
     base = cfg["sampling"]["random_state"]
     rows = []
     for it in read_jsonl(items_path):
         n, g = it["n_options"], it["answer_index"]
         perm = reshuffle(n, g, item_seed(it["item_id"], "order_o1", base))
         rows.append({"item_id": it["item_id"], "order_id": "o0", "perm": list(range(n)),
-                     "gold_index": g, "gold_letter": LETTERS[g]})
-        _, g1 = apply_order(it["options"], g, perm)
+                     "gold_index": g, "gold_letter": LETTERS[g]})  # for BFCL: position label only
+        _, g1 = apply_order(it.get("options") or it["functions"], g, perm)
         rows.append({"item_id": it["item_id"], "order_id": "o1", "perm": perm,
                      "gold_index": g1, "gold_letter": LETTERS[g1]})
     out = DATA / "manifests" / f"{items_path.stem}_orders.jsonl"
@@ -88,17 +89,26 @@ REWORD_SYSTEM = (
     "Change sentence structure and wording, not meaning. Return only the rewritten question."
 )
 
+REWORD_SYSTEM_BFCL = (
+    "You rewrite requests that users send to an AI assistant with tools. Produce ONE paraphrase "
+    "that asks for exactly the same thing. Rules: copy every specific value EXACTLY as written, "
+    "with the same spelling, capitalisation and format: names, places, numbers, dates, times, "
+    "units, quoted text, codes and lists. Do not add, remove or infer any detail, do not mention "
+    "functions or tools, and do not answer the request. Change sentence structure and wording "
+    "around the values only. Return only the rewritten request."
+)
+
 NUM = re.compile(r"-?\d+(?:[.,]\d+)*(?:[eE][-+]?\d+)?")
 BLANK = re.compile(r"_{2,}")
 
 
-def call_chat(prompt: str, variant: int, retries: int = 4) -> str:
+def call_chat(prompt: str, variant: int, retries: int = 4, system: str = REWORD_SYSTEM) -> str:
     base = os.environ["REWORD_API_BASE"].rstrip("/")
     body = {
         "model": os.environ["REWORD_MODEL"],
         "messages": [
-            {"role": "system", "content": REWORD_SYSTEM},
-            {"role": "user", "content": f"Paraphrase #{variant} (make it differ from other paraphrases).\n\nQuestion:\n{prompt}"},
+            {"role": "system", "content": system},
+            {"role": "user", "content": f"Paraphrase #{variant} (make it differ from other paraphrases).\n\nText:\n{prompt}"},
         ],
         "temperature": 0.8,
     }
@@ -141,6 +151,53 @@ def auto_check(original: str, reworded: str, options: list[str]) -> list[str]:
     return issues
 
 
+def _atoms(v):
+    """All concrete string/number values inside a possible-answer entry (recursively)."""
+    if isinstance(v, dict):
+        for vals in v.values():
+            for x in vals:
+                yield from _atoms(x)
+    elif isinstance(v, list):
+        for x in v:
+            yield from _atoms(x)
+    elif isinstance(v, bool) or v == "" or v is None:
+        return
+    else:
+        yield v
+
+
+def _appears(value, text: str) -> bool:
+    if isinstance(value, str):
+        return value.strip() != "" and value.lower() in text.lower()
+    if isinstance(value, (int, float)):
+        forms = {str(value)}
+        if isinstance(value, float) and value.is_integer():
+            forms.add(str(int(value)))
+        if isinstance(value, int) and abs(value) >= 1000:
+            forms.add(f"{value:,}")
+        return any(re.search(rf"(?<![\d.]){re.escape(f)}(?![\d])", text) for f in forms)
+    return False
+
+
+def bfcl_value_check(original: str, reworded: str, ground_truth: list) -> list[str]:
+    """Every argument value that appears in the ORIGINAL request must appear verbatim in the
+    rewording (BFCL's answer lists match the original strings). Values that are not in the
+    original (inferred, defaults) cannot be checked this way and are ignored."""
+    issues = []
+    args = next(iter(ground_truth[0].values()))
+    for param, allowed in args.items():
+        present = [a for a in _atoms(allowed) if _appears(a, original)]
+        if present and not any(_appears(a, reworded) for a in present):
+            issues.append(f"arg_value_missing:{param}")
+    return issues
+
+
+def auto_check_bfcl(original: str, reworded: str, ground_truth: list) -> list[str]:
+    issues = [i for i in auto_check(original, reworded, []) if i != "mentions_option_letter"]
+    issues += bfcl_value_check(original, reworded, ground_truth)
+    return issues
+
+
 def cmd_reword(items_path: Path, n_rewordings: int) -> None:
     out = DATA / "reworded" / f"{items_path.stem}_review.csv"
     done = set()
@@ -158,8 +215,12 @@ def cmd_reword(items_path: Path, n_rewordings: int) -> None:
                 wid = f"w{k}"
                 if (it["item_id"], wid) in done:
                     continue
-                text = call_chat(it["question"], k)
-                issues = auto_check(it["question"], text, it["options"])
+                if task_of(it) == "bfcl_multiple":
+                    text = call_chat(it["question"], k, system=REWORD_SYSTEM_BFCL)
+                    issues = auto_check_bfcl(it["question"], text, it["ground_truth"])
+                else:
+                    text = call_chat(it["question"], k)
+                    issues = auto_check(it["question"], text, it["options"])
                 w.writerow({"item_id": it["item_id"], "wording_id": wid,
                             "original": it["question"], "reworded": text,
                             "auto_issues": ";".join(issues), "human_ok": "", "notes": ""})
@@ -207,9 +268,10 @@ def main() -> None:
     ap.add_argument("cmd", choices=["orders", "reword", "finalize"])
     ap.add_argument("--items", type=Path, required=True)
     ap.add_argument("--n-rewordings", type=int, default=2)
+    ap.add_argument("--config", default=None, help="configs/experiment_bfcl.yaml for BFCL")
     a = ap.parse_args()
     items = a.items if a.items.is_absolute() else Path.cwd() / a.items
-    {"orders": lambda: cmd_orders(items),
+    {"orders": lambda: cmd_orders(items, a.config),
      "reword": lambda: cmd_reword(items, a.n_rewordings),
      "finalize": lambda: cmd_finalize(items, a.n_rewordings)}[a.cmd]()
 

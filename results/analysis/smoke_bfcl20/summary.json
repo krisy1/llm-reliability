@@ -1,0 +1,14 @@
+{
+  "n_items": 20,
+  "models": [
+    "qwen2.5-0.5b"
+  ],
+  "runs_per_item": 4,
+  "H1_mean_minus_reliable_pts": {
+    "qwen2.5-0.5b": 15.0
+  },
+  "H1_holds_for_all": false,
+  "n_pairs": 0,
+  "discordant_pairs_greedy_vs_reliable": 0,
+  "H3_significant_discordant_pairs": 0
+}

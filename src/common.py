@@ -46,3 +46,12 @@ def item_seed(item_id: str | int, salt: str, base: int) -> int:
     """Deterministic 32-bit seed per item, independent of item order in the file."""
     h = hashlib.sha256(f"{base}|{salt}|{item_id}".encode()).hexdigest()
     return int(h[:8], 16)
+
+
+def experiment_config(path: str | None = None) -> dict:
+    """configs/experiment.yaml (MMLU-Pro) by default; configs/experiment_bfcl.yaml for BFCL."""
+    return load_yaml(path or "configs/experiment.yaml")
+
+
+def task_of(item_or_row: dict) -> str:
+    return "bfcl_multiple" if str(item_or_row["item_id"]).startswith("bfcl_") else "mmlu_pro"

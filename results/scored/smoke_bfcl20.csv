@@ -1,0 +1,613 @@
+run_id,item_id,task,category,wording_id,order_id,decoding,seed,n_options,gold_letter,gold_text,model,hf_id,raw_output,n_new_tokens,prompt_tokens,batch_seconds,batch_n,prefill,backend,dtype_used,device,batch_size,resolved_revision,torch,python,parse_fail,parse_rule,correct,error_type,chosen_text,called_function,right_function,parsed_letter,letter_text_mismatch
+bfcl_multiple_0|w0|o0|sampled|0,bfcl_multiple_0,bfcl_multiple,multiple,w0,o0,sampled,0.0,2,A,triangle_properties.get,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""triangle_properties.get"",
+    ""arguments"": {
+        ""side1"": 5,
+        ""side2"": 4,
+        ""side3"": 3
+    }
+}",43,538,50.47,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""triangle_properties.get"": {""side1"": 5, ""side2"": 4, ""side3"": 3}}",triangle_properties.get,1,,False
+bfcl_multiple_0|w0|o0|greedy|g,bfcl_multiple_0,bfcl_multiple,multiple,w0,o0,greedy,,2,A,triangle_properties.get,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""triangle_properties.get"",
+    ""arguments"": {
+        ""side1"": 5,
+        ""side2"": 4,
+        ""side3"": 3
+    }
+}",43,538,53.091,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""triangle_properties.get"": {""side1"": 5, ""side2"": 4, ""side3"": 3}}",triangle_properties.get,1,,False
+bfcl_multiple_0|w0|o1|sampled|0,bfcl_multiple_0,bfcl_multiple,multiple,w0,o1,sampled,0.0,2,B,triangle_properties.get,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""triangle_properties.get"",
+    ""arguments"": {
+        ""side1"": 5,
+        ""side2"": 4,
+        ""side3"": 3,
+        ""get_area"": false,
+        ""get_perimeter"": false,
+        ""get_angles"": false
+    }
+}",65,538,50.47,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,value_error:others,"{""triangle_properties.get"": {""get_angles"": false, ""get_area"": false, ""get_perimeter"": false, ""side1"": 5, ""side2"": 4, ""side3"": 3}}",triangle_properties.get,1,,False
+bfcl_multiple_0|w0|o1|greedy|g,bfcl_multiple_0,bfcl_multiple,multiple,w0,o1,greedy,,2,B,triangle_properties.get,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""triangle_properties.get"",
+    ""arguments"": {
+        ""side1"": 5,
+        ""side2"": 4,
+        ""side3"": 3
+    }
+}",43,538,53.091,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""triangle_properties.get"": {""side1"": 5, ""side2"": 4, ""side3"": 3}}",triangle_properties.get,1,,False
+bfcl_multiple_1|w0|o0|sampled|0,bfcl_multiple_1,bfcl_multiple,multiple,w0,o0,sampled,0.0,3,A,math.triangle_area_heron,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""math.triangle_area_heron"",
+    ""arguments"": {
+        ""side1"": 3,
+        ""side2"": 4,
+        ""side3"": 5
+    }
+}",46,478,31.218,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""math.triangle_area_heron"": {""side1"": 3, ""side2"": 4, ""side3"": 5}}",math.triangle_area_heron,1,,False
+bfcl_multiple_1|w0|o0|greedy|g,bfcl_multiple_1,bfcl_multiple,multiple,w0,o0,greedy,,3,A,math.triangle_area_heron,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""math.triangle_area_heron"",
+    ""arguments"": {
+        ""side1"": 3,
+        ""side2"": 4,
+        ""side3"": 5
+    }
+}",46,478,28.276,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""math.triangle_area_heron"": {""side1"": 3, ""side2"": 4, ""side3"": 5}}",math.triangle_area_heron,1,,False
+bfcl_multiple_1|w0|o1|sampled|0,bfcl_multiple_1,bfcl_multiple,multiple,w0,o1,sampled,0.0,3,C,math.triangle_area_heron,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""math.triangle_area_heron"",
+    ""arguments"": {
+        ""side1"": 3,
+        ""side2"": 4,
+        ""side3"": 5
+    }
+}",46,478,31.218,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""math.triangle_area_heron"": {""side1"": 3, ""side2"": 4, ""side3"": 5}}",math.triangle_area_heron,1,,False
+bfcl_multiple_1|w0|o1|greedy|g,bfcl_multiple_1,bfcl_multiple,multiple,w0,o1,greedy,,3,C,math.triangle_area_heron,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""math.triangle_area_heron"",
+    ""arguments"": {
+        ""side1"": 3,
+        ""side2"": 4,
+        ""side3"": 5
+    }
+}",46,478,28.276,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""math.triangle_area_heron"": {""side1"": 3, ""side2"": 4, ""side3"": 5}}",math.triangle_area_heron,1,,False
+bfcl_multiple_2|w0|o0|sampled|0,bfcl_multiple_2,bfcl_multiple,multiple,w0,o0,sampled,0.0,3,B,country_info.capital,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""country_info.capital"",
+  ""arguments"": {
+    ""country"": ""Brazil""
+  }
+}",27,512,33.332,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""country_info.capital"": {""country"": ""Brazil""}}",country_info.capital,1,,False
+bfcl_multiple_2|w0|o0|greedy|g,bfcl_multiple_2,bfcl_multiple,multiple,w0,o0,greedy,,3,B,country_info.capital,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""country_info.capital"",
+  ""arguments"": {
+    ""country"": ""Brazil""
+  }
+}",27,512,31.241,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""country_info.capital"": {""country"": ""Brazil""}}",country_info.capital,1,,False
+bfcl_multiple_2|w0|o1|sampled|0,bfcl_multiple_2,bfcl_multiple,multiple,w0,o1,sampled,0.0,3,C,country_info.capital,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""country_info.capital"",
+  ""arguments"": {
+    ""country"": ""Brazil""
+  }
+}",27,512,33.332,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""country_info.capital"": {""country"": ""Brazil""}}",country_info.capital,1,,False
+bfcl_multiple_2|w0|o1|greedy|g,bfcl_multiple_2,bfcl_multiple,multiple,w0,o1,greedy,,3,C,country_info.capital,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""country_info.capital"",
+  ""arguments"": {
+    ""country"": ""Brazil""
+  }
+}",27,512,31.241,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""country_info.capital"": {""country"": ""Brazil""}}",country_info.capital,1,,False
+bfcl_multiple_3|w0|o0|sampled|0,bfcl_multiple_3,bfcl_multiple,multiple,w0,o0,sampled,0.0,2,A,EuclideanDistance.calculate,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""EuclideanDistance.calculate"",
+  ""arguments"": {
+    ""pointA"": [3, 4],
+    ""pointB"": [1, 2],
+    ""rounding"": 0
+  }
+}",50,512,33.332,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""EuclideanDistance.calculate"": {""pointA"": [3, 4], ""pointB"": [1, 2], ""rounding"": 0}}",EuclideanDistance.calculate,1,,False
+bfcl_multiple_3|w0|o0|greedy|g,bfcl_multiple_3,bfcl_multiple,multiple,w0,o0,greedy,,2,A,EuclideanDistance.calculate,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""EuclideanDistance.calculate"",
+    ""arguments"": {
+        ""pointA"": [3, 4],
+        ""pointB"": [1, 2]
+    }
+}",42,512,31.241,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""EuclideanDistance.calculate"": {""pointA"": [3, 4], ""pointB"": [1, 2]}}",EuclideanDistance.calculate,1,,False
+bfcl_multiple_3|w0|o1|sampled|0,bfcl_multiple_3,bfcl_multiple,multiple,w0,o1,sampled,0.0,2,B,EuclideanDistance.calculate,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""EuclideanDistance.calculate"",
+    ""arguments"": {
+        ""pointA"": [3, 4],
+        ""pointB"": [1, 2]
+    }
+}",42,512,33.332,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""EuclideanDistance.calculate"": {""pointA"": [3, 4], ""pointB"": [1, 2]}}",EuclideanDistance.calculate,1,,False
+bfcl_multiple_3|w0|o1|greedy|g,bfcl_multiple_3,bfcl_multiple,multiple,w0,o1,greedy,,2,B,EuclideanDistance.calculate,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""EuclideanDistance.calculate"",
+    ""arguments"": {
+        ""pointA"": [3, 4],
+        ""pointB"": [1, 2]
+    }
+}",42,512,31.241,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""EuclideanDistance.calculate"": {""pointA"": [3, 4], ""pointB"": [1, 2]}}",EuclideanDistance.calculate,1,,False
+bfcl_multiple_4|w0|o0|sampled|0,bfcl_multiple_4,bfcl_multiple,multiple,w0,o0,sampled,0.0,2,A,kinematics.calculate_displacement,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""kinematics.calculate_displacement"",
+    ""arguments"": {
+        ""initial_speed"": 20,
+        ""acceleration"": 10,
+        ""time"": 5
+    }
+}",46,512,33.332,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""kinematics.calculate_displacement"": {""acceleration"": 10, ""initial_speed"": 20, ""time"": 5}}",kinematics.calculate_displacement,1,,False
+bfcl_multiple_4|w0|o0|greedy|g,bfcl_multiple_4,bfcl_multiple,multiple,w0,o0,greedy,,2,A,kinematics.calculate_displacement,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""kinematics.calculate_displacement"",
+    ""arguments"": {
+        ""initial_speed"": 20,
+        ""acceleration"": 10,
+        ""time"": 5
+    }
+}",46,512,31.241,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""kinematics.calculate_displacement"": {""acceleration"": 10, ""initial_speed"": 20, ""time"": 5}}",kinematics.calculate_displacement,1,,False
+bfcl_multiple_4|w0|o1|sampled|0,bfcl_multiple_4,bfcl_multiple,multiple,w0,o1,sampled,0.0,2,B,kinematics.calculate_displacement,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""kinematics.calculate_displacement"",
+    ""arguments"": {
+        ""initial_speed"": 20,
+        ""acceleration"": 10,
+        ""time"": 5
+    }
+}",46,512,33.332,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""kinematics.calculate_displacement"": {""acceleration"": 10, ""initial_speed"": 20, ""time"": 5}}",kinematics.calculate_displacement,1,,False
+bfcl_multiple_4|w0|o1|greedy|g,bfcl_multiple_4,bfcl_multiple,multiple,w0,o1,greedy,,2,B,kinematics.calculate_displacement,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""kinematics.calculate_displacement"",
+    ""arguments"": {
+        ""initial_speed"": 20,
+        ""acceleration"": 10,
+        ""time"": 5
+    }
+}",46,512,31.241,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""kinematics.calculate_displacement"": {""acceleration"": 10, ""initial_speed"": 20, ""time"": 5}}",kinematics.calculate_displacement,1,,False
+bfcl_multiple_5|w0|o0|sampled|0,bfcl_multiple_5,bfcl_multiple,multiple,w0,o0,sampled,0.0,3,C,weather.get_by_coordinates_date,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""weather.get_forecast_by_coordinates"",
+  ""arguments"": {
+    ""coordinates"": [46.603354, 1.888334],
+    ""days_ahead"": 1
+  }
+}",56,512,33.332,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,simple_function_checker:wrong_func_name,"{""weather.get_forecast_by_coordinates"": {""coordinates"": [46.603354, 1.888334], ""days_ahead"": 1}}",weather.get_forecast_by_coordinates,0,,False
+bfcl_multiple_5|w0|o0|greedy|g,bfcl_multiple_5,bfcl_multiple,multiple,w0,o0,greedy,,3,C,weather.get_by_coordinates_date,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""weather.get_by_coordinates_date"",
+    ""arguments"": {
+        ""coordinates"": [46.603354, 1.888334],
+        ""date"": ""2019-12-13""
+    }
+}",62,512,31.241,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""weather.get_by_coordinates_date"": {""coordinates"": [46.603354, 1.888334], ""date"": ""2019-12-13""}}",weather.get_by_coordinates_date,1,,False
+bfcl_multiple_5|w0|o1|sampled|0,bfcl_multiple_5,bfcl_multiple,multiple,w0,o1,sampled,0.0,3,B,weather.get_by_coordinates_date,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{""name"": ""weather.get_forecast_by_coordinates"", ""arguments"": {""coordinates"": (46.603354, 1.888334), ""days_ahead"": 1}}",47,512,33.332,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,True,invalid_json,0,parse_failure,,,0,,False
+bfcl_multiple_5|w0|o1|greedy|g,bfcl_multiple_5,bfcl_multiple,multiple,w0,o1,greedy,,3,B,weather.get_by_coordinates_date,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""weather.get_forecast_by_coordinates"",
+    ""arguments"": {
+        ""coordinates"": [46.603354, 1.888334],
+        ""days_ahead"": 1
+    }
+}",56,512,31.241,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,simple_function_checker:wrong_func_name,"{""weather.get_forecast_by_coordinates"": {""coordinates"": [46.603354, 1.888334], ""days_ahead"": 1}}",weather.get_forecast_by_coordinates,0,,False
+bfcl_multiple_6|w0|o0|sampled|0,bfcl_multiple_6,bfcl_multiple,multiple,w0,o0,sampled,0.0,3,B,capacitance_calculator.calculate,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""capacitance_calculator.calculate"",
+  ""arguments"": {
+    ""A"": 10,
+    ""d"": 0.01,
+    ""K"": 1.0
+  }
+}",50,485,39.632,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""capacitance_calculator.calculate"": {""A"": 10, ""K"": 1.0, ""d"": 0.01}}",capacitance_calculator.calculate,1,,False
+bfcl_multiple_6|w0|o0|greedy|g,bfcl_multiple_6,bfcl_multiple,multiple,w0,o0,greedy,,3,B,capacitance_calculator.calculate,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""capacitance_calculator.calculate"",
+    ""arguments"": {
+        ""A"": 10,
+        ""d"": 0.01
+    }
+}",41,485,34.41,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""capacitance_calculator.calculate"": {""A"": 10, ""d"": 0.01}}",capacitance_calculator.calculate,1,,False
+bfcl_multiple_6|w0|o1|sampled|0,bfcl_multiple_6,bfcl_multiple,multiple,w0,o1,sampled,0.0,3,A,capacitance_calculator.calculate,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""capacitance_calculator.calculate"",
+    ""arguments"": {
+        ""A"": 10,
+        ""d"": 0.01,
+        ""K"": 1.0
+    }
+}",50,485,39.632,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""capacitance_calculator.calculate"": {""A"": 10, ""K"": 1.0, ""d"": 0.01}}",capacitance_calculator.calculate,1,,False
+bfcl_multiple_6|w0|o1|greedy|g,bfcl_multiple_6,bfcl_multiple,multiple,w0,o1,greedy,,3,A,capacitance_calculator.calculate,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""capacitance_calculator.calculate"",
+    ""arguments"": {
+        ""A"": 10,
+        ""d"": 0.01,
+        ""K"": 1.0
+    }
+}",50,485,34.41,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""capacitance_calculator.calculate"": {""A"": 10, ""K"": 1.0, ""d"": 0.01}}",capacitance_calculator.calculate,1,,False
+bfcl_multiple_7|w0|o0|sampled|0,bfcl_multiple_7,bfcl_multiple,multiple,w0,o0,sampled,0.0,2,A,wildlife_population.assess_growth,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""wildlife_population.assess_growth"",
+    ""arguments"": {
+        ""species"": ""deer"",
+        ""location"": ""woodland in Washington state"",
+        ""duration"": 10
+    }
+}",49,485,39.632,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,value_error:string,"{""wildlife_population.assess_growth"": {""duration"": 10, ""location"": ""woodland in Washington state"", ""species"": ""deer""}}",wildlife_population.assess_growth,1,,False
+bfcl_multiple_7|w0|o0|greedy|g,bfcl_multiple_7,bfcl_multiple,multiple,w0,o0,greedy,,2,A,wildlife_population.assess_growth,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""wildlife_population.assess_growth"",
+    ""arguments"": {
+        ""species"": ""deer"",
+        ""location"": ""woodland in Washington state"",
+        ""duration"": 10
+    }
+}",49,485,34.41,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,value_error:string,"{""wildlife_population.assess_growth"": {""duration"": 10, ""location"": ""woodland in Washington state"", ""species"": ""deer""}}",wildlife_population.assess_growth,1,,False
+bfcl_multiple_7|w0|o1|sampled|0,bfcl_multiple_7,bfcl_multiple,multiple,w0,o1,sampled,0.0,2,B,wildlife_population.assess_growth,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""wildlife_population.assess_growth"",
+    ""arguments"": {
+        ""species"": ""deer"",
+        ""location"": ""woodland in Washington state"",
+        ""duration"": 10
+    }
+}",49,485,39.632,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,value_error:string,"{""wildlife_population.assess_growth"": {""duration"": 10, ""location"": ""woodland in Washington state"", ""species"": ""deer""}}",wildlife_population.assess_growth,1,,False
+bfcl_multiple_7|w0|o1|greedy|g,bfcl_multiple_7,bfcl_multiple,multiple,w0,o1,greedy,,2,B,wildlife_population.assess_growth,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""wildlife_population.assess_growth"",
+    ""arguments"": {
+        ""species"": ""deer"",
+        ""location"": ""woodland in Washington state"",
+        ""duration"": 10
+    }
+}",49,485,34.41,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,value_error:string,"{""wildlife_population.assess_growth"": {""duration"": 10, ""location"": ""woodland in Washington state"", ""species"": ""deer""}}",wildlife_population.assess_growth,1,,False
+bfcl_multiple_8|w0|o0|sampled|0,bfcl_multiple_8,bfcl_multiple,multiple,w0,o0,sampled,0.0,2,B,realestate.find_properties,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""realestate.find_properties"",
+    ""arguments"": {
+        ""location"": ""San Diego, CA"",
+        ""propertyType"": ""villa"",
+        ""bedrooms"": 3,
+        ""budget"": {
+            ""min"": 25000,
+            ""max"": 39000
+        }
+    }
+}",76,485,39.632,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,value_error:dict_value,"{""realestate.find_properties"": {""bedrooms"": 3, ""budget"": {""max"": 39000, ""min"": 25000}, ""location"": ""San Diego, CA"", ""propertyType"": ""villa""}}",realestate.find_properties,1,,False
+bfcl_multiple_8|w0|o0|greedy|g,bfcl_multiple_8,bfcl_multiple,multiple,w0,o0,greedy,,2,B,realestate.find_properties,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""realestate.find_properties"",
+    ""arguments"": {
+        ""location"": ""San Diego, CA"",
+        ""propertyType"": ""villa"",
+        ""bedrooms"": 3,
+        ""budget"": {
+            ""min"": 250000,
+            ""max"": 350000
+        }
+    }
+}",78,485,34.41,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,value_error:dict_value,"{""realestate.find_properties"": {""bedrooms"": 3, ""budget"": {""max"": 350000, ""min"": 250000}, ""location"": ""San Diego, CA"", ""propertyType"": ""villa""}}",realestate.find_properties,1,,False
+bfcl_multiple_8|w0|o1|sampled|0,bfcl_multiple_8,bfcl_multiple,multiple,w0,o1,sampled,0.0,2,A,realestate.find_properties,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{""name"": ""realestate.find_properties"", ""arguments"": {""location"": ""San Diego, CA"", ""propertyType"": ""villa"", ""bedrooms"": 3, ""budget"": {""min"": 300000, ""max"": 400000}}}",62,485,39.632,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""realestate.find_properties"": {""bedrooms"": 3, ""budget"": {""max"": 400000, ""min"": 300000}, ""location"": ""San Diego, CA"", ""propertyType"": ""villa""}}",realestate.find_properties,1,,False
+bfcl_multiple_8|w0|o1|greedy|g,bfcl_multiple_8,bfcl_multiple,multiple,w0,o1,greedy,,2,A,realestate.find_properties,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""realestate.find_properties"",
+    ""arguments"": {
+        ""location"": ""San Diego, CA"",
+        ""propertyType"": ""villa"",
+        ""bedrooms"": 3,
+        ""budget"": {
+            ""min"": 250000,
+            ""max"": 350000
+        }
+    }
+}",78,485,34.41,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,value_error:dict_value,"{""realestate.find_properties"": {""bedrooms"": 3, ""budget"": {""max"": 350000, ""min"": 250000}, ""location"": ""San Diego, CA"", ""propertyType"": ""villa""}}",realestate.find_properties,1,,False
+bfcl_multiple_9|w0|o0|sampled|0,bfcl_multiple_9,bfcl_multiple,multiple,w0,o0,sampled,0.0,3,B,calculate_average,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""calculate_average"",
+  ""arguments"": {
+    ""gradeDict"": {
+      ""math"": 90,
+      ""science"": 75,
+      ""history"": 82,
+      ""music"": 89
+    }
+  }
+}",58,485,39.632,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""calculate_average"": {""gradeDict"": {""history"": 82, ""math"": 90, ""music"": 89, ""science"": 75}}}",calculate_average,1,,False
+bfcl_multiple_9|w0|o0|greedy|g,bfcl_multiple_9,bfcl_multiple,multiple,w0,o0,greedy,,3,B,calculate_average,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""calculate_average"",
+  ""arguments"": {
+    ""gradeDict"": {
+      ""math"": 90,
+      ""science"": 75,
+      ""history"": 82,
+      ""music"": 89
+    }
+  }
+}",58,485,34.41,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""calculate_average"": {""gradeDict"": {""history"": 82, ""math"": 90, ""music"": 89, ""science"": 75}}}",calculate_average,1,,False
+bfcl_multiple_9|w0|o1|sampled|0,bfcl_multiple_9,bfcl_multiple,multiple,w0,o1,sampled,0.0,3,C,calculate_average,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""calculate_average"",
+  ""arguments"": {
+    ""gradeDict"": {
+      ""math"": 90,
+      ""science"": 75,
+      ""history"": 82,
+      ""music"": 89
+    }
+  }
+}",58,485,39.632,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""calculate_average"": {""gradeDict"": {""history"": 82, ""math"": 90, ""music"": 89, ""science"": 75}}}",calculate_average,1,,False
+bfcl_multiple_9|w0|o1|greedy|g,bfcl_multiple_9,bfcl_multiple,multiple,w0,o1,greedy,,3,C,calculate_average,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""calculate_average"",
+  ""arguments"": {
+    ""gradeDict"": {
+      ""math"": 90,
+      ""science"": 75,
+      ""history"": 82,
+      ""music"": 89
+    }
+  }
+}",58,485,34.41,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""calculate_average"": {""gradeDict"": {""history"": 82, ""math"": 90, ""music"": 89, ""science"": 75}}}",calculate_average,1,,False
+bfcl_multiple_10|w0|o0|sampled|0,bfcl_multiple_10,bfcl_multiple,multiple,w0,o0,sampled,0.0,2,A,database.modify_columns,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""database.modify_columns"",
+  ""arguments"": {
+    ""db_name"": ""personal_data"",
+    ""table"": ""employees"",
+    ""operation"": ""delete"",
+    ""columns"": [
+      ""email_address"",
+      ""social_security_number""
+    ]
+  }
+}",60,538,50.47,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,value_error:string,"{""database.modify_columns"": {""columns"": [""email_address"", ""social_security_number""], ""db_name"": ""personal_data"", ""operation"": ""delete"", ""table"": ""employees""}}",database.modify_columns,1,,False
+bfcl_multiple_10|w0|o0|greedy|g,bfcl_multiple_10,bfcl_multiple,multiple,w0,o0,greedy,,2,A,database.modify_columns,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""database.modify_columns"",
+  ""arguments"": {
+    ""db_name"": ""personal_data"",
+    ""table"": ""employees"",
+    ""operation"": ""delete"",
+    ""columns"": [""email_address"", ""social_security_number""]
+  }
+}",55,538,53.091,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,value_error:string,"{""database.modify_columns"": {""columns"": [""email_address"", ""social_security_number""], ""db_name"": ""personal_data"", ""operation"": ""delete"", ""table"": ""employees""}}",database.modify_columns,1,,False
+bfcl_multiple_10|w0|o1|sampled|0,bfcl_multiple_10,bfcl_multiple,multiple,w0,o1,sampled,0.0,2,B,database.modify_columns,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""database.modify_columns"",
+  ""arguments"": {
+    ""db_name"": ""personal_data"",
+    ""table"": ""employees"",
+    ""operation"": ""delete"",
+    ""columns"": [
+      ""email_address"",
+      ""social_security_number""
+    ]
+  }
+}",60,538,50.47,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,value_error:string,"{""database.modify_columns"": {""columns"": [""email_address"", ""social_security_number""], ""db_name"": ""personal_data"", ""operation"": ""delete"", ""table"": ""employees""}}",database.modify_columns,1,,False
+bfcl_multiple_10|w0|o1|greedy|g,bfcl_multiple_10,bfcl_multiple,multiple,w0,o1,greedy,,2,B,database.modify_columns,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""database.modify_columns"",
+  ""arguments"": {
+    ""db_name"": ""personal_data"",
+    ""table"": ""employees"",
+    ""operation"": ""delete"",
+    ""columns"": [
+      ""email_address"",
+      ""social_security_number""
+    ]
+  }
+}",60,538,53.091,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,value_error:string,"{""database.modify_columns"": {""columns"": [""email_address"", ""social_security_number""], ""db_name"": ""personal_data"", ""operation"": ""delete"", ""table"": ""employees""}}",database.modify_columns,1,,False
+bfcl_multiple_11|w0|o0|sampled|0,bfcl_multiple_11,bfcl_multiple,multiple,w0,o0,sampled,0.0,3,A,math_roots.quadratic,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""math.roots.quadratic"",
+    ""arguments"": {
+        ""a"": 5,
+        ""b"": 20,
+        ""c"": -25
+    }
+}",44,538,50.47,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,simple_function_checker:wrong_func_name,"{""math.roots.quadratic"": {""a"": 5, ""b"": 20, ""c"": -25}}",math.roots.quadratic,0,,False
+bfcl_multiple_11|w0|o0|greedy|g,bfcl_multiple_11,bfcl_multiple,multiple,w0,o0,greedy,,3,A,math_roots.quadratic,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""math.roots.quadratic"",
+    ""arguments"": {
+        ""a"": 5,
+        ""b"": 20,
+        ""c"": -25
+    }
+}",44,538,53.091,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,simple_function_checker:wrong_func_name,"{""math.roots.quadratic"": {""a"": 5, ""b"": 20, ""c"": -25}}",math.roots.quadratic,0,,False
+bfcl_multiple_11|w0|o1|sampled|0,bfcl_multiple_11,bfcl_multiple,multiple,w0,o1,sampled,0.0,3,B,math_roots.quadratic,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""math.roots.quadratic"",
+    ""arguments"": {
+        ""a"": 5,
+        ""b"": 20,
+        ""c"": -25
+    }
+}",44,538,50.47,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,simple_function_checker:wrong_func_name,"{""math.roots.quadratic"": {""a"": 5, ""b"": 20, ""c"": -25}}",math.roots.quadratic,0,,False
+bfcl_multiple_11|w0|o1|greedy|g,bfcl_multiple_11,bfcl_multiple,multiple,w0,o1,greedy,,3,B,math_roots.quadratic,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""math_roots.quadratic"",
+    ""arguments"": {
+        ""a"": 5,
+        ""b"": 20,
+        ""c"": -25
+    }
+}",44,538,53.091,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""math_roots.quadratic"": {""a"": 5, ""b"": 20, ""c"": -25}}",math_roots.quadratic,1,,False
+bfcl_multiple_12|w0|o0|sampled|0,bfcl_multiple_12,bfcl_multiple,multiple,w0,o0,sampled,0.0,3,A,corporate_finance.calculate_YOY_growth_rate,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{""name"": ""corporate_finance.calculate_YOY_growth_rate"", ""arguments"": {""company_name"": ""Tech Inc"", ""year1"": 2019, ""year1_revenue"": 10000, ""year2"": 12000, ""year2_revenue"": 12000}}",74,538,50.47,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,value_error:others,"{""corporate_finance.calculate_YOY_growth_rate"": {""company_name"": ""Tech Inc"", ""year1"": 2019, ""year1_revenue"": 10000, ""year2"": 12000, ""year2_revenue"": 12000}}",corporate_finance.calculate_YOY_growth_rate,1,,False
+bfcl_multiple_12|w0|o0|greedy|g,bfcl_multiple_12,bfcl_multiple,multiple,w0,o0,greedy,,3,A,corporate_finance.calculate_YOY_growth_rate,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""corporate_finance.calculate_YOY_growth_rate"",
+    ""arguments"": {
+        ""company_name"": ""Tech Inc"",
+        ""year1"": 2019,
+        ""year1_revenue"": 1000000,
+        ""year2"": 1200000,
+        ""year2_revenue"": 1200000
+    }
+}",92,538,53.091,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,value_error:others,"{""corporate_finance.calculate_YOY_growth_rate"": {""company_name"": ""Tech Inc"", ""year1"": 2019, ""year1_revenue"": 1000000, ""year2"": 1200000, ""year2_revenue"": 1200000}}",corporate_finance.calculate_YOY_growth_rate,1,,False
+bfcl_multiple_12|w0|o1|sampled|0,bfcl_multiple_12,bfcl_multiple,multiple,w0,o1,sampled,0.0,3,B,corporate_finance.calculate_YOY_growth_rate,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{""name"": ""corporate_finance.calculate_YOY_growth_rate"", ""arguments"": {""company_name"": ""Tech Inc"", ""year1"": 2019, ""year1_revenue"": 1000000, ""year2"": 1200000, ""year2_revenue"": 1200000, ""year2_revenue_updated"": 1200000}}",96,538,50.47,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,value_error:others,"{""corporate_finance.calculate_YOY_growth_rate"": {""company_name"": ""Tech Inc"", ""year1"": 2019, ""year1_revenue"": 1000000, ""year2"": 1200000, ""year2_revenue"": 1200000, ""year2_revenue_updated"": 1200000}}",corporate_finance.calculate_YOY_growth_rate,1,,False
+bfcl_multiple_12|w0|o1|greedy|g,bfcl_multiple_12,bfcl_multiple,multiple,w0,o1,greedy,,3,B,corporate_finance.calculate_YOY_growth_rate,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""corporate_finance.calculate_YOY_growth_rate"",
+    ""arguments"": {
+        ""company_name"": ""Tech Inc"",
+        ""year1"": 2019,
+        ""year1_revenue"": 1000000,
+        ""year2"": 1200000,
+        ""year2_revenue"": 1200000
+    }
+}",92,538,53.091,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,value_error:others,"{""corporate_finance.calculate_YOY_growth_rate"": {""company_name"": ""Tech Inc"", ""year1"": 2019, ""year1_revenue"": 1000000, ""year2"": 1200000, ""year2_revenue"": 1200000}}",corporate_finance.calculate_YOY_growth_rate,1,,False
+bfcl_multiple_13|w0|o0|sampled|0,bfcl_multiple_13,bfcl_multiple,multiple,w0,o0,sampled,0.0,2,B,corporate_finance.revenue_forecast,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""corporate_finance.revenue_forecast"",
+    ""arguments"": {
+        ""company"": ""XYZ"",
+        ""product"": ""A""
+    }
+}",38,546,38.855,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,simple_function_checker:missing_optional,"{""corporate_finance.revenue_forecast"": {""company"": ""XYZ"", ""product"": ""A""}}",corporate_finance.revenue_forecast,1,,False
+bfcl_multiple_13|w0|o0|greedy|g,bfcl_multiple_13,bfcl_multiple,multiple,w0,o0,greedy,,2,B,corporate_finance.revenue_forecast,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""corporate_finance.revenue_forecast"",
+    ""arguments"": {
+        ""company"": ""XYZ"",
+        ""product"": ""A""
+    }
+}",38,546,35.002,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,simple_function_checker:missing_optional,"{""corporate_finance.revenue_forecast"": {""company"": ""XYZ"", ""product"": ""A""}}",corporate_finance.revenue_forecast,1,,False
+bfcl_multiple_13|w0|o1|sampled|0,bfcl_multiple_13,bfcl_multiple,multiple,w0,o1,sampled,0.0,2,A,corporate_finance.revenue_forecast,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""corporate_finance.revenue_forecast"",
+  ""arguments"": {
+    ""company"": ""XYZ"",
+    ""product"": ""A"",
+    ""sales_units_increase_percentage"": 10
+  }
+}",49,546,38.855,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""corporate_finance.revenue_forecast"": {""company"": ""XYZ"", ""product"": ""A"", ""sales_units_increase_percentage"": 10}}",corporate_finance.revenue_forecast,1,,False
+bfcl_multiple_13|w0|o1|greedy|g,bfcl_multiple_13,bfcl_multiple,multiple,w0,o1,greedy,,2,A,corporate_finance.revenue_forecast,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""corporate_finance.revenue_forecast"",
+    ""arguments"": {
+        ""company"": ""XYZ"",
+        ""product"": ""A"",
+        ""sales_units_increase_percentage"": 10
+    }
+}",49,546,35.002,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""corporate_finance.revenue_forecast"": {""company"": ""XYZ"", ""product"": ""A"", ""sales_units_increase_percentage"": 10}}",corporate_finance.revenue_forecast,1,,False
+bfcl_multiple_14|w0|o0|sampled|0,bfcl_multiple_14,bfcl_multiple,multiple,w0,o0,sampled,0.0,3,A,finance.property_depreciation,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""finance.property_depreciation"",
+    ""arguments"": {
+        ""initial_cost"": 200000,
+        ""depreciation_rate"": 3,
+        ""years"": 5
+    }
+}",51,546,38.855,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""finance.property_depreciation"": {""depreciation_rate"": 3, ""initial_cost"": 200000, ""years"": 5}}",finance.property_depreciation,1,,False
+bfcl_multiple_14|w0|o0|greedy|g,bfcl_multiple_14,bfcl_multiple,multiple,w0,o0,greedy,,3,A,finance.property_depreciation,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""finance.property_depreciation"",
+    ""arguments"": {
+        ""initial_cost"": 200000,
+        ""depreciation_rate"": 3,
+        ""years"": 5
+    }
+}",51,546,35.002,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""finance.property_depreciation"": {""depreciation_rate"": 3, ""initial_cost"": 200000, ""years"": 5}}",finance.property_depreciation,1,,False
+bfcl_multiple_14|w0|o1|sampled|0,bfcl_multiple_14,bfcl_multiple,multiple,w0,o1,sampled,0.0,3,B,finance.property_depreciation,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{""name"": ""finance.property_depreciation"", ""arguments"": {""initial_cost"": 200000, ""depreciation_rate"": 3, ""years"": 5}}",41,546,38.855,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""finance.property_depreciation"": {""depreciation_rate"": 3, ""initial_cost"": 200000, ""years"": 5}}",finance.property_depreciation,1,,False
+bfcl_multiple_14|w0|o1|greedy|g,bfcl_multiple_14,bfcl_multiple,multiple,w0,o1,greedy,,3,B,finance.property_depreciation,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""finance.property_depreciation"",
+    ""arguments"": {
+        ""initial_cost"": 200000,
+        ""depreciation_rate"": 3,
+        ""years"": 5
+    }
+}",51,546,35.002,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""finance.property_depreciation"": {""depreciation_rate"": 3, ""initial_cost"": 200000, ""years"": 5}}",finance.property_depreciation,1,,False
+bfcl_multiple_15|w0|o0|sampled|0,bfcl_multiple_15,bfcl_multiple,multiple,w0,o0,sampled,0.0,2,A,solarFarm.potential,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""sunPowerSolarFarm.potential"",
+    ""arguments"": {
+        ""coordinates"": [43.653225, -79.383186],
+        ""panelArea"": 80000,
+        ""month"": ""December""
+    }
+}",68,546,38.855,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,simple_function_checker:wrong_func_name,"{""sunPowerSolarFarm.potential"": {""coordinates"": [43.653225, -79.383186], ""month"": ""December"", ""panelArea"": 80000}}",sunPowerSolarFarm.potential,0,,False
+bfcl_multiple_15|w0|o0|greedy|g,bfcl_multiple_15,bfcl_multiple,multiple,w0,o0,greedy,,2,A,solarFarm.potential,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""solarFarm.potential"",
+    ""arguments"": {
+        ""coordinates"": [43.653225, -79.383186],
+        ""panelArea"": 80000,
+        ""month"": ""December""
+    }
+}",67,546,35.002,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""solarFarm.potential"": {""coordinates"": [43.653225, -79.383186], ""month"": ""December"", ""panelArea"": 80000}}",solarFarm.potential,1,,False
+bfcl_multiple_15|w0|o1|sampled|0,bfcl_multiple_15,bfcl_multiple,multiple,w0,o1,sampled,0.0,2,B,solarFarm.potential,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""solarFarm.potential"",
+    ""arguments"": {
+        ""coordinates"": [43.653225, -79.383186],
+        ""panelArea"": 80000,
+        ""month"": ""December""
+    }
+}",67,546,38.855,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""solarFarm.potential"": {""coordinates"": [43.653225, -79.383186], ""month"": ""December"", ""panelArea"": 80000}}",solarFarm.potential,1,,False
+bfcl_multiple_15|w0|o1|greedy|g,bfcl_multiple_15,bfcl_multiple,multiple,w0,o1,greedy,,2,B,solarFarm.potential,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""solarFarm.potential"",
+    ""arguments"": {
+        ""coordinates"": [43.653225, -79.383186],
+        ""panelArea"": 80000,
+        ""month"": ""December""
+    }
+}",67,546,35.002,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""solarFarm.potential"": {""coordinates"": [43.653225, -79.383186], ""month"": ""December"", ""panelArea"": 80000}}",solarFarm.potential,1,,False
+bfcl_multiple_16|w0|o0|sampled|0,bfcl_multiple_16,bfcl_multiple,multiple,w0,o0,sampled,0.0,3,B,population_genetics.calculate_ne,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""population_genetics.calculate_ne"",
+    ""arguments"": {
+        ""species"": ""tiger"",
+        ""generations"": 100,
+        ""probability"": 0.95
+    }
+}",49,546,38.855,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""population_genetics.calculate_ne"": {""generations"": 100, ""probability"": 0.95, ""species"": ""tiger""}}",population_genetics.calculate_ne,1,,False
+bfcl_multiple_16|w0|o0|greedy|g,bfcl_multiple_16,bfcl_multiple,multiple,w0,o0,greedy,,3,B,population_genetics.calculate_ne,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""population_genetics.calculate_ne"",
+    ""arguments"": {
+        ""species"": ""tiger"",
+        ""generations"": 100,
+        ""probability"": 0.95
+    }
+}",49,546,35.002,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""population_genetics.calculate_ne"": {""generations"": 100, ""probability"": 0.95, ""species"": ""tiger""}}",population_genetics.calculate_ne,1,,False
+bfcl_multiple_16|w0|o1|sampled|0,bfcl_multiple_16,bfcl_multiple,multiple,w0,o1,sampled,0.0,3,A,population_genetics.calculate_ne,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""population_genetics.calculate_ne"",
+  ""arguments"": {
+    ""species"": ""tiger"",
+    ""generations"": 100,
+    ""probability"": 0.95
+  }
+}",49,546,38.855,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""population_genetics.calculate_ne"": {""generations"": 100, ""probability"": 0.95, ""species"": ""tiger""}}",population_genetics.calculate_ne,1,,False
+bfcl_multiple_16|w0|o1|greedy|g,bfcl_multiple_16,bfcl_multiple,multiple,w0,o1,greedy,,3,A,population_genetics.calculate_ne,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""population_genetics.calculate_ne"",
+    ""arguments"": {
+        ""species"": ""tiger"",
+        ""generations"": 100,
+        ""probability"": 0.95
+    }
+}",49,546,35.002,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""population_genetics.calculate_ne"": {""generations"": 100, ""probability"": 0.95, ""species"": ""tiger""}}",population_genetics.calculate_ne,1,,False
+bfcl_multiple_17|w0|o0|sampled|0,bfcl_multiple_17,bfcl_multiple,multiple,w0,o0,sampled,0.0,3,C,currency_conversion.get_rate,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""currency_conversion.get_rate"",
+    ""arguments"": {
+        ""from_currency"": ""Euro"",
+        ""to_currency"": ""Dollar"",
+        ""date"": ""2022-01-01""
+    }
+}",53,478,31.218,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""currency_conversion.get_rate"": {""date"": ""2022-01-01"", ""from_currency"": ""Euro"", ""to_currency"": ""Dollar""}}",currency_conversion.get_rate,1,,False
+bfcl_multiple_17|w0|o0|greedy|g,bfcl_multiple_17,bfcl_multiple,multiple,w0,o0,greedy,,3,C,currency_conversion.get_rate,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""currency_conversion.get_latest_rate"",
+    ""arguments"": {
+        ""from_currency"": ""Euro"",
+        ""to_currency"": ""Dollar"",
+        ""date"": ""2022-01-01""
+    }
+}",54,478,28.276,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,simple_function_checker:wrong_func_name,"{""currency_conversion.get_latest_rate"": {""date"": ""2022-01-01"", ""from_currency"": ""Euro"", ""to_currency"": ""Dollar""}}",currency_conversion.get_latest_rate,0,,False
+bfcl_multiple_17|w0|o1|sampled|0,bfcl_multiple_17,bfcl_multiple,multiple,w0,o1,sampled,0.0,3,A,currency_conversion.get_rate,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""currency_conversion.get_rate"",
+    ""arguments"": {
+        ""from_currency"": ""Euro"",
+        ""to_currency"": ""Dollar"",
+        ""date"": ""2022-01-01""
+    }
+}",53,478,31.218,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""currency_conversion.get_rate"": {""date"": ""2022-01-01"", ""from_currency"": ""Euro"", ""to_currency"": ""Dollar""}}",currency_conversion.get_rate,1,,False
+bfcl_multiple_17|w0|o1|greedy|g,bfcl_multiple_17,bfcl_multiple,multiple,w0,o1,greedy,,3,A,currency_conversion.get_rate,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""currency_conversion.get_latest_rate"",
+    ""arguments"": {
+        ""from_currency"": ""Euro"",
+        ""to_currency"": ""Dollar"",
+        ""date"": ""2022-01-01""
+    }
+}",54,478,28.276,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,simple_function_checker:wrong_func_name,"{""currency_conversion.get_latest_rate"": {""date"": ""2022-01-01"", ""from_currency"": ""Euro"", ""to_currency"": ""Dollar""}}",currency_conversion.get_latest_rate,0,,False
+bfcl_multiple_18|w0|o0|sampled|0,bfcl_multiple_18,bfcl_multiple,multiple,w0,o0,sampled,0.0,3,C,european_history.battle_details,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""european_history.battle_details"",
+    ""arguments"": {
+        ""battle"": ""Battle of Stalingrad""
+    }
+}",33,478,31.218,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""european_history.battle_details"": {""battle"": ""Battle of Stalingrad""}}",european_history.battle_details,1,,False
+bfcl_multiple_18|w0|o0|greedy|g,bfcl_multiple_18,bfcl_multiple,multiple,w0,o0,greedy,,3,C,european_history.battle_details,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""european_history.battle_details"",
+  ""arguments"": {
+    ""battle"": ""Battle of Stalingrad""
+  }
+}",33,478,28.276,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""european_history.battle_details"": {""battle"": ""Battle of Stalingrad""}}",european_history.battle_details,1,,False
+bfcl_multiple_18|w0|o1|sampled|0,bfcl_multiple_18,bfcl_multiple,multiple,w0,o1,sampled,0.0,3,B,european_history.battle_details,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""european_history.leader_info"",
+  ""arguments"": {
+    ""leader"": ""Stalingrad""
+  }
+}",31,478,31.218,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,simple_function_checker:wrong_func_name,"{""european_history.leader_info"": {""leader"": ""Stalingrad""}}",european_history.leader_info,0,,False
+bfcl_multiple_18|w0|o1|greedy|g,bfcl_multiple_18,bfcl_multiple,multiple,w0,o1,greedy,,3,B,european_history.battle_details,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+  ""name"": ""european_history.leader_info"",
+  ""arguments"": {
+    ""leader"": ""Stalingrad""
+  }
+}",31,478,28.276,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,simple_function_checker:wrong_func_name,"{""european_history.leader_info"": {""leader"": ""Stalingrad""}}",european_history.leader_info,0,,False
+bfcl_multiple_19|w0|o0|sampled|0,bfcl_multiple_19,bfcl_multiple,multiple,w0,o0,sampled,0.0,3,C,religion_history.get_schisms,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""religion_history.get_schisms"",
+    ""arguments"": {
+        ""religion"": ""Christianity""
+    }
+}",32,478,31.218,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,simple_function_checker:missing_required,"{""religion_history.get_schisms"": {""religion"": ""Christianity""}}",religion_history.get_schisms,1,,False
+bfcl_multiple_19|w0|o0|greedy|g,bfcl_multiple_19,bfcl_multiple,multiple,w0,o0,greedy,,3,C,religion_history.get_schisms,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""religion_history.get_schisms"",
+    ""arguments"": {
+        ""religion"": ""Christianity""
+    }
+}",32,478,28.276,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,0,simple_function_checker:missing_required,"{""religion_history.get_schisms"": {""religion"": ""Christianity""}}",religion_history.get_schisms,1,,False
+bfcl_multiple_19|w0|o1|sampled|0,bfcl_multiple_19,bfcl_multiple,multiple,w0,o1,sampled,0.0,3,A,religion_history.get_schisms,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{""name"": ""religion_history.get_schisms"", ""arguments"": {""religion"": ""Christianity"", ""count"": 3}}",30,478,31.218,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""religion_history.get_schisms"": {""count"": 3, ""religion"": ""Christianity""}}",religion_history.get_schisms,1,,False
+bfcl_multiple_19|w0|o1|greedy|g,bfcl_multiple_19,bfcl_multiple,multiple,w0,o1,greedy,,3,A,religion_history.get_schisms,qwen2.5-0.5b,Qwen/Qwen2.5-0.5B-Instruct,"{
+    ""name"": ""religion_history.get_schisms"",
+    ""arguments"": {
+        ""religion"": ""Christianity"",
+        ""count"": 3
+    }
+}",39,478,28.276,8,,transformers,float32,cpu,8,,2.14.1+cpu,3.14.8,False,name_arguments,1,ok,"{""religion_history.get_schisms"": {""count"": 3, ""religion"": ""Christianity""}}",religion_history.get_schisms,1,,False

@@ -4,3 +4,4 @@
 {"model": "qwen2.5-0.5b", "manifest": "data/manifests/pilot_prefill_greedy.jsonl", "n_runs": 100, "wall_seconds": 162.9, "backend": "transformers"}
 {"model": "smollm2-360m", "manifest": "data/manifests/pilot_prefill_greedy.jsonl", "n_runs": 100, "wall_seconds": 161.2, "backend": "transformers"}
 {"model": "smollm2-360m", "manifest": "data/manifests/pilot_prefill_greedy.jsonl", "n_runs": 100, "wall_seconds": 161.4, "backend": "transformers"}
+{"model": "qwen2.5-0.5b", "manifest": "data/manifests/smoke_bfcl20.jsonl", "n_runs": 80, "wall_seconds": 381.4, "backend": "transformers"}

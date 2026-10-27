@@ -46,3 +46,14 @@ total. CPU (2 cores, float32), transformers backend, batch size 16. About 8 minu
   a parse-failure rate above 10%; in that case use the prefill for **all** models. Write the
   rule and the choice in the paper's method section, and report the comparison in an appendix.
 * Time the largest model (Phi-3.5-mini) on 50 items × 30 runs to confirm the compute budget.
+
+## BFCL multiple — CPU smoke test (27 Oct 2026)
+
+Qwen2.5-0.5B-Instruct, the first 20 items, original wording, 2 function orders × (1 sampled
+seed + greedy) = 80 runs, about 6 minutes on CPU.
+
+* Checker check: BFCL's own reference answers pass 200/200.
+* Greedy accuracy 60% [40, 80], reliable accuracy 45% [25, 70], right function chosen in 86% of runs.
+* Failures: wrong value 20%, wrong function 12.5%, missing argument 5%, unparseable ≤2.5%.
+* Function order alone changed correctness on 25% [10, 45] of items (greedy runs).
+* Longest output was 96 tokens, so 128 is enough here; keep watching `truncated_json` with the 3B models.

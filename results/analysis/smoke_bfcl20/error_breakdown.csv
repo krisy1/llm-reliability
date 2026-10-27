@@ -1,0 +1,3 @@
+model,decoding,correct,missing_argument,unparseable,wrong_function,wrong_value
+qwen2.5-0.5b,greedy,0.625,0.05,0.0,0.125,0.2
+qwen2.5-0.5b,sampled,0.6,0.05,0.025,0.125,0.2

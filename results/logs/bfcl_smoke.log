@@ -1,0 +1,12 @@
+Qwen/Qwen2.5-0.5B-Instruct: 80 runs in manifest, 0 done, 80 to go -> /home/user/workspace/llm-reliability/results/generations/smoke_bfcl20__qwen2.5-0.5b.jsonl
+[8/80] greedy seed=None batch 53.1s  eta 8.0 min
+[16/80] greedy seed=None batch 35.0s  eta 5.9 min
+[24/80] greedy seed=None batch 28.3s  eta 4.5 min
+[32/80] greedy seed=None batch 31.2s  eta 3.7 min
+[40/80] greedy seed=None batch 34.4s  eta 3.0 min
+[48/80] sampled seed=0 batch 50.5s  eta 2.6 min
+[56/80] sampled seed=0 batch 38.9s  eta 1.9 min
+[64/80] sampled seed=0 batch 31.2s  eta 1.3 min
+[72/80] sampled seed=0 batch 33.3s  eta 0.6 min
+[80/80] sampled seed=0 batch 39.6s  eta 0.0 min
+{"model": "qwen2.5-0.5b", "manifest": "data/manifests/smoke_bfcl20.jsonl", "n_runs": 80, "wall_seconds": 381.4, "backend": "transformers"}

@@ -14,14 +14,16 @@ import itertools
 from collections import Counter
 from pathlib import Path
 
-from .common import DATA, LETTERS, load_yaml, read_jsonl, write_jsonl
+from .common import DATA, LETTERS, experiment_config, read_jsonl, task_of, write_jsonl
 from .make_variants import apply_order
-from .prompts import mmlu_user_message
+from .prompts import bfcl_user_message, mmlu_user_message
 
 
 def main() -> None:
-    cfg = load_yaml("configs/experiment.yaml")
-    ap = argparse.ArgumentParser()
+    pre = argparse.ArgumentParser(add_help=False)
+    pre.add_argument("--config", default=None)
+    cfg = experiment_config(pre.parse_known_args()[0].config)
+    ap = argparse.ArgumentParser(parents=[pre])
     ap.add_argument("--items", type=Path, required=True)
     ap.add_argument("--wordings", nargs="+", default=cfg["factors"]["wordings"])
     ap.add_argument("--orders", nargs="+", default=cfg["factors"]["orders"])
@@ -57,15 +59,19 @@ def main() -> None:
     for it, w, o, (dec, seed) in itertools.product(items, a.wordings, a.orders, decodings):
         q = wordings[(it["item_id"], w)]
         ordr = orders[(it["item_id"], o)]
-        opts, gold = apply_order(it["options"], it["answer_index"], ordr["perm"])
         run_id = f"{it['item_id']}|{w}|{o}|{dec}|{'g' if seed is None else seed}"
-        rows.append({
-            "run_id": run_id, "item_id": it["item_id"], "task": "mmlu_pro",
-            "category": it["category"], "wording_id": w, "order_id": o,
-            "decoding": dec, "seed": seed, "n_options": len(opts),
-            "gold_letter": LETTERS[gold], "gold_text": opts[gold],
-            "prompt": mmlu_user_message(q, opts),
-        })
+        base = {"run_id": run_id, "item_id": it["item_id"], "task": task_of(it),
+                "category": it["category"], "wording_id": w, "order_id": o,
+                "decoding": dec, "seed": seed}
+        if task_of(it) == "bfcl_multiple":
+            fns, gold = apply_order(it["functions"], it["answer_index"], ordr["perm"])
+            rows.append({**base, "n_options": len(fns), "gold_letter": LETTERS[gold],
+                         "gold_text": fns[gold]["name"], "prompt": bfcl_user_message(q, fns),
+                         "functions": fns, "ground_truth": it["ground_truth"]})
+        else:
+            opts, gold = apply_order(it["options"], it["answer_index"], ordr["perm"])
+            rows.append({**base, "n_options": len(opts), "gold_letter": LETTERS[gold],
+                         "gold_text": opts[gold], "prompt": mmlu_user_message(q, opts)})
 
     name = a.name or f"{stem}__{'-'.join(a.wordings)}__{'-'.join(a.orders)}__s{len(a.seeds)}"
     out = DATA / "manifests" / f"{name}.jsonl"

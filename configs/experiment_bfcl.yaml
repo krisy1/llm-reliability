@@ -1,0 +1,29 @@
+# BFCL "multiple" experiment. Same design as MMLU-Pro; only the task-specific settings differ.
+
+task: bfcl_multiple
+
+sampling:
+  n_items: 200               # the whole category; pilot = 100 (python -m src.sample_bfcl --n 100)
+  random_state: 2026         # seed for the tool-order reshuffles
+
+factors:
+  seeds: [0, 1, 2, 3]
+  wordings: [w0, w1, w2]     # w0 = original request
+  orders: [o0, o1]           # o1 = one fixed reshuffle of the candidate functions (correct one always moves)
+  greedy_cells: true
+
+prompt:
+  assistant_prefill: ""      # keep "" for JSON output; decide in the pilot, then freeze
+
+decoding:
+  sampled:
+    temperature: 0.7
+    top_p: 0.95
+    max_new_tokens: 128
+  greedy:
+    temperature: 0.0
+    max_new_tokens: 128
+
+analysis:
+  n_bootstrap: 2000
+  ci_level: 0.95

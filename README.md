@@ -5,7 +5,7 @@ CSC301 Seminar project. Every test item is run under every combination of
 and we can check whether model rankings survive when "accuracy" is replaced by "reliability".
 
 Current status: **MMLU-Pro pipeline complete and tested end-to-end** (CPU smoke pilot with two
-tiny models, 600 generations; see `PILOT_NOTES.md`). BFCL function calling is the next module.
+tiny models, 600 generations; see `PILOT_NOTES.md`). BFCL "multiple" (function calling) is built and tested too.
 Prefill comparison: `python -m src.run_generation ... --prefill "The answer is" --tag _prefill`.
 
 ## Pipeline
@@ -30,6 +30,37 @@ analyse  <-  score_runs  <-  run_generation (one call per model)  <-  build_mani
 
 Run the tests with `python -m pytest -q tests` (parser, reshuffles, rewording pipeline, and
 every metric checked on synthetic models with known answers).
+
+## BFCL "multiple" (function calling)
+
+All 200 items of BFCL v4 "multiple" (2–4 candidate functions, one correct call), pinned to gorilla
+commit `6ea57973`. Use `--config configs/experiment_bfcl.yaml` with every step.
+
+```bash
+python -m src.sample_bfcl                                   # all 200 (or --n 100 for the pilot)
+python -m src.make_variants orders   --items data/sampled/bfcl_multiple_n200.jsonl --config configs/experiment_bfcl.yaml
+python -m src.make_variants reword   --items data/sampled/bfcl_multiple_n200.jsonl   # then human check + finalize
+python -m src.build_manifest --config configs/experiment_bfcl.yaml --items data/sampled/bfcl_multiple_n200.jsonl
+python -m src.run_generation --config configs/experiment_bfcl.yaml --model qwen2.5-3b --manifest data/manifests/<name>.jsonl
+python -m src.score_runs --manifest data/manifests/<name>.jsonl
+python -m src.analyse --config configs/experiment_bfcl.yaml --scored results/scored/<name>.csv --ranking-only
+```
+
+* **Order factor** = order of the candidate functions in the prompt; the reshuffle always moves
+  the correct function to a new position.
+* **Prompt:** one fixed instruction, functions as one JSON schema per line, answer as
+  `{"name": ..., "arguments": {...}}`, `max_new_tokens = 128`. The same plain-text prompt is used for
+  every model (no model-specific tool templates), so format is held constant.
+* **Checker** (`src/bfcl_checker.py`): a port of the Python path of BFCL's own checker
+  (Apache-2.0): exact function name, required arguments present, no extra arguments, each value
+  in the allowed list (strings compared case- and punctuation-insensitively, integer accepted for float),
+  argument omitted only if `""` is allowed. Tested: BFCL's own reference answers pass 200/200.
+  Unreadable or cut-off JSON counts as wrong and is reported as a parse failure (`truncated_json`
+  shows that 128 tokens was too few).
+* **Rewording check:** every argument value that appears in the original request must appear
+  word for word in each rewording (`arg_value_missing:<param>`), plus the general number checks.
+* **Error breakdown** (`error_breakdown.csv`): correct / wrong function / wrong value /
+  missing argument / extra argument / wrong type / unparseable.
 
 ## Rewording API (step 3)
 
@@ -94,7 +125,8 @@ on Kaggle first (`--backend vllm` if it installs, else transformers with `--batc
 ## Licences
 
 * MMLU-Pro (TIGER-Lab): MIT licence.
-* BFCL (Gorilla, UC Berkeley): Apache 2.0.
+* BFCL (Gorilla, UC Berkeley): Apache 2.0. `src/bfcl_checker.py` is adapted from BFCL's checker
+  under the same licence.
 * Models: each under its own licence (Qwen: Apache 2.0 / Qwen licence; Llama 3.2: Llama 3.2
   Community Licence; Phi-3.5: MIT; SmolLM: Apache 2.0; Granite: Apache 2.0). Verify on each
   model card and record the exact revision used.

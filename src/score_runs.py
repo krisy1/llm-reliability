@@ -6,11 +6,13 @@ Writes results/scored/<manifest>.csv with one row per (model, run).
 from __future__ import annotations
 
 import argparse
+import json
 from pathlib import Path
 
 import pandas as pd
 
 from .common import LETTERS, RESULTS, read_jsonl
+from .bfcl_checker import check as bfcl_check
 from .parse_outputs import parse_letter
 
 
@@ -28,15 +30,32 @@ def score(manifest: Path) -> pd.DataFrame:
         missing = len(man) - len(df)
         if missing:
             print(f"  {gen_file.name}: {missing} runs not generated yet (excluded)")
-        parsed = [parse_letter(pf + r, n) for pf, r, n in zip(df["prefill"], df["raw_output"], df["n_options"])]
-        df["parsed_letter"] = [p[0] for p in parsed]
-        df["parse_rule"] = [p[1] for p in parsed]
-        df["parse_fail"] = df["parsed_letter"].isna()
-        df["correct"] = (df["parsed_letter"] == df["gold_letter"]).astype(int)
+        if (df["task"] == "bfcl_multiple").all():
+            res = [bfcl_check(pf + r, fns, gt) for pf, r, fns, gt in
+                   zip(df["prefill"], df["raw_output"], df["functions"], df["ground_truth"])]
+            df["parse_fail"] = [x["parse_fail"] for x in res]
+            df["parse_rule"] = [x["parse_rule"] for x in res]
+            df["correct"] = [x["correct"] for x in res]
+            df["error_type"] = [x["error_type"] for x in res]
+            df["chosen_text"] = [x["called"] for x in res]     # canonical call, for answer changes
+            df["called_function"] = [json.loads(x["called"]) and next(iter(json.loads(x["called"])))
+                                     if x["called"] else None for x in res]
+            df["right_function"] = (df["called_function"] == df["gold_text"]).astype(int)
+            df["parsed_letter"] = None
+            df = df.drop(columns=["functions", "ground_truth"])
+        else:
+            parsed = [parse_letter(pf + r, n) for pf, r, n in zip(df["prefill"], df["raw_output"], df["n_options"])]
+            df["parsed_letter"] = [p[0] for p in parsed]
+            df["parse_rule"] = [p[1] for p in parsed]
+            df["parse_fail"] = df["parsed_letter"].isna()
+            df["correct"] = (df["parsed_letter"] == df["gold_letter"]).astype(int)
         frames.append(df)
     if not frames:
         raise SystemExit("no generations found for this manifest")
     out = pd.concat(frames, ignore_index=True)
+    if (out["task"] == "bfcl_multiple").all():
+        out["letter_text_mismatch"] = False
+        return out.drop(columns=["prompt"])
     # chosen option TEXT (needed to detect answer changes across orders, where letters move)
     out["chosen_text"] = [
         _option_text(p, l) if l else None for p, l in zip(out["prompt"], out["parsed_letter"])
@@ -77,6 +96,8 @@ def main() -> None:
                                                      parse_fail=("parse_fail", "mean"),
                                                      letter_text_mismatch=("letter_text_mismatch", "mean"))
     print(summary.round(3).to_string())
+    if "error_type" in df:
+        print(df.groupby("model")["error_type"].value_counts(normalize=True).round(3).to_string())
     print(f"wrote {out}")
 
 

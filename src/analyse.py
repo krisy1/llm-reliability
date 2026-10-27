@@ -220,9 +220,11 @@ def figures(card: pd.DataFrame, flips: pd.DataFrame, ranks: pd.DataFrame, budget
 # ------------------------------------------------------------------ main
 
 def main() -> None:
-    cfg = load_yaml("configs/experiment.yaml")["analysis"]
+    pre = argparse.ArgumentParser(add_help=False)
+    pre.add_argument("--config", default=None)
+    cfg = load_yaml(pre.parse_known_args()[0].config or "configs/experiment.yaml")["analysis"]
     roles = {m["name"]: m.get("role") for m in load_yaml("configs/models.yaml")["models"]}
-    ap = argparse.ArgumentParser()
+    ap = argparse.ArgumentParser(parents=[pre])
     ap.add_argument("--scored", type=Path, required=True)
     ap.add_argument("--n-boot", type=int, default=cfg["n_bootstrap"])
     ap.add_argument("--ranking-only", action="store_true", help="drop smoke-test / size-ladder models")
@@ -299,8 +301,23 @@ def main() -> None:
         budget.to_csv(outdir / "budget_curve.csv", index=False)
 
     flips = card[["model"] + [c for c in card.columns if c.startswith("flip_") or c.startswith("change_")]]
-    chance = float((1 / df.drop_duplicates("item_id").set_index("item_id").loc[items, "n_options"]).mean())
+    chance = None if (df["task"] == "bfcl_multiple").all() else float((1 / df.drop_duplicates("item_id").set_index("item_id").loc[items, "n_options"]).mean())
     figures(card, flips, ranks, budget, outdir, a.title_note, chance)
+
+    if "error_type" in df and df["error_type"].notna().any():   # BFCL: where do failures come from?
+        def bucket(e):
+            if e == "ok": return "correct"
+            if e == "parse_failure": return "unparseable"
+            if "wrong_func_name" in e or "wrong_count" in e: return "wrong_function"
+            if "type_error" in e: return "wrong_type"
+            if "missing" in e: return "missing_argument"
+            if "unexpected_param" in e: return "extra_argument"
+            return "wrong_value"
+        eb = (df[df["model"].isin(models) & df["item_id"].isin(items)]
+              .assign(bucket=lambda d: d["error_type"].fillna("parse_failure").map(bucket))
+              .groupby(["model", "decoding"])["bucket"].value_counts(normalize=True).unstack(fill_value=0))
+        eb.round(4).to_csv(outdir / "error_breakdown.csv")
+        print((eb * 100).round(1).to_string())
 
     summary = {
         "n_items": len(items), "models": models, "runs_per_item": int(full),
