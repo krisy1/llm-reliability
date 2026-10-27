@@ -11,9 +11,10 @@ finalize  reads the reviewed CSV and writes data/reworded/<stem>_wordings.jsonl,
           items whose rewordings all passed both automatic and human checks.
 
 Environment variables for `reword` (never hard-code keys):
-  REWORD_API_BASE   e.g. https://api.groq.com/openai/v1
+  REWORD_API_BASE   https://api.groq.com/openai/v1   (or Gemini: https://generativelanguage.googleapis.com/v1beta/openai)
   REWORD_API_KEY
-  REWORD_MODEL      e.g. llama-3.3-70b-versatile
+  REWORD_MODEL      e.g. openai/gpt-oss-120b on Groq
+  REWORD_REASONING_EFFORT, REWORD_MIN_INTERVAL  (optional, see call_chat)
 
 Usage
 -----
@@ -102,7 +103,19 @@ NUM = re.compile(r"-?\d+(?:[.,]\d+)*(?:[eE][-+]?\d+)?")
 BLANK = re.compile(r"_{2,}")
 
 
-def call_chat(prompt: str, variant: int, retries: int = 4, system: str = REWORD_SYSTEM) -> str:
+_last_call = [0.0]
+
+
+def call_chat(prompt: str, variant: int, retries: int = 8, system: str = REWORD_SYSTEM) -> str:
+    """One paraphrase from an OpenAI-compatible endpoint.
+
+    Optional environment variables:
+      REWORD_REASONING_EFFORT  e.g. "low" for gpt-oss on Groq or Gemini Flash (thinking tokens
+                               count against free-tier token quotas, so keep it low)
+      REWORD_MIN_INTERVAL      seconds between calls (default 4 = 15 per minute, under free RPM/TPM caps)
+    A daily-quota 429 stops the script cleanly; finished rows are already saved, so just rerun later.
+    """
+    import urllib.error
     base = os.environ["REWORD_API_BASE"].rstrip("/")
     body = {
         "model": os.environ["REWORD_MODEL"],
@@ -112,20 +125,38 @@ def call_chat(prompt: str, variant: int, retries: int = 4, system: str = REWORD_
         ],
         "temperature": 0.8,
     }
-    req = urllib.request.Request(
-        f"{base}/chat/completions", data=json.dumps(body).encode(),
-        headers={"Authorization": f"Bearer {os.environ['REWORD_API_KEY']}",
-                 "Content-Type": "application/json"},
-    )
+    if os.environ.get("REWORD_REASONING_EFFORT"):
+        body["reasoning_effort"] = os.environ["REWORD_REASONING_EFFORT"]
+    min_gap = float(os.environ.get("REWORD_MIN_INTERVAL", "4"))
     for attempt in range(retries):
-        try:
-            with urllib.request.urlopen(req, timeout=60) as r:
-                return json.loads(r.read())["choices"][0]["message"]["content"].strip()
-        except Exception as e:  # rate limits on free tiers are common: back off
-            wait = 2 ** attempt * 5
-            print(f"  API error ({e}); retry in {wait}s")
+        wait = min_gap - (time.time() - _last_call[0])
+        if wait > 0:
             time.sleep(wait)
-    raise RuntimeError("rewording API failed repeatedly")
+        _last_call[0] = time.time()
+        req = urllib.request.Request(
+            f"{base}/chat/completions", data=json.dumps(body).encode(),
+            headers={"Authorization": f"Bearer {os.environ['REWORD_API_KEY']}",
+                     "Content-Type": "application/json"},
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=90) as r:
+                text = json.loads(r.read())["choices"][0]["message"]["content"] or ""
+            text = re.sub(r"<think>.*?</think>", "", text, flags=re.S).strip()
+            if text:
+                return text
+            print("  empty reply; retrying")
+        except urllib.error.HTTPError as e:
+            msg = e.read().decode(errors="ignore")[:300]
+            if e.code == 429 and re.search(r"per day|daily|RPD|TPD|quota", msg, re.I):
+                raise SystemExit(f"Daily free-tier limit reached ({msg}). Progress is saved; rerun tomorrow.")
+            ra = e.headers.get("retry-after")
+            delay = float(ra) if ra and ra.replace(".", "").isdigit() else 2 ** attempt * 5
+            print(f"  HTTP {e.code}: {msg[:120]} -> retry in {delay:.0f}s")
+            time.sleep(min(delay, 120))
+        except Exception as e:
+            print(f"  network error ({e}); retry in {2 ** attempt * 5}s")
+            time.sleep(2 ** attempt * 5)
+    raise SystemExit("rewording API failed repeatedly; progress is saved, rerun later")
 
 
 def auto_check(original: str, reworded: str, options: list[str]) -> list[str]:

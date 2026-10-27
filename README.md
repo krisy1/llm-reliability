@@ -67,9 +67,19 @@ python -m src.analyse --config configs/experiment_bfcl.yaml --scored results/sco
 Any OpenAI-compatible free tier works. Keys are read from the environment only:
 
 ```bash
-export REWORD_API_BASE=https://api.groq.com/openai/v1   # or Gemini / OpenRouter OpenAI-compatible URL
-export REWORD_API_KEY=...                               # never commit this
-export REWORD_MODEL=llama-3.3-70b-versatile
+export REWORD_API_BASE=https://api.groq.com/openai/v1
+export REWORD_API_KEY=...                       # never commit this
+export REWORD_MODEL=openai/gpt-oss-120b         # free plan: 30 RPM, 1K requests/day, 200K tokens/day
+export REWORD_REASONING_EFFORT=low              # reasoning tokens count against the daily token cap
+export REWORD_MIN_INTERVAL=6                    # stays under the 8K tokens-per-minute cap
+```
+
+Use ONE rewording model for every item (state it in the paper). If the daily cap is hit, the
+script stops cleanly; rerun the same command the next day and it continues where it stopped.
+Gemini alternative: `REWORD_API_BASE=https://generativelanguage.googleapis.com/v1beta/openai`,
+a Flash model, `REWORD_REASONING_EFFORT=low`; check your project's free quota in AI Studio.
+
+```bash
 ```
 
 Automatic checks flag: changed numbers, changed blanks (`____`), length ratio outside 0.6–1.7,
