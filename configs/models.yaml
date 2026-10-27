@@ -6,32 +6,32 @@ models:
   # Smoke-test model (fits on CPU); not part of the ranking analysis.
   - name: qwen2.5-0.5b
     hf_id: Qwen/Qwen2.5-0.5B-Instruct
-    revision: main
+    revision: 7ae557604adf67be50417f59c2c2f167def9a775   # pinned 27 Oct 2026
     role: smoke_test
   - name: smollm2-360m
     hf_id: HuggingFaceTB/SmolLM2-360M-Instruct
-    revision: main
+    revision: a10cc1512eabd3dde888204e902eca88bddb4951   # pinned 27 Oct 2026
     role: smoke_test
 
   # Ranking set (about 2-4B, different families / post-training recipes).
   - name: qwen2.5-3b
     hf_id: Qwen/Qwen2.5-3B-Instruct
-    revision: main
+    revision: aa8e72537993ba99e69dfaafa59ed015b17504d1   # pinned 27 Oct 2026
     role: ranking
   - name: llama3.2-3b
     hf_id: meta-llama/Llama-3.2-3B-Instruct     # gated: accept the licence on Hugging Face first
-    revision: main
+    revision: 0cb88a4f764b7a12671c53f0838cd831a0843b95   # pinned 27 Oct 2026
     role: ranking
   - name: phi3.5-mini
     hf_id: microsoft/Phi-3.5-mini-instruct
-    revision: main
+    revision: 2fe192450127e6a83f7441aef6e3ca586c338b77   # pinned 27 Oct 2026
     role: ranking
   - name: smollm3-3b
     hf_id: HuggingFaceTB/SmolLM3-3B
-    revision: main
+    revision: a07cc9a04f16550a088caea529712d1d335b0ac1   # pinned 27 Oct 2026
     role: ranking
     chat_template_kwargs: {enable_thinking: false}   # otherwise it "thinks" first and blows past 8 tokens
   - name: granite3.3-2b
     hf_id: ibm-granite/granite-3.3-2b-instruct
-    revision: main
+    revision: 707f574c62054322f6b5b04b6d075f0a8f05e0f0   # pinned 27 Oct 2026
     role: ranking
