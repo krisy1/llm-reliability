@@ -1,0 +1,37 @@
+{
+  "dataset": "TIGER-Lab/MMLU-Pro (test split)",
+  "n_total": 12032,
+  "n_excluded": 176,
+  "excluded_by_reason": {
+    "positional_reference": 158,
+    "duplicate_options": 18
+  },
+  "n_pool": 11856,
+  "n_sampled": 300,
+  "random_state": 2026,
+  "per_category": {
+    "biology": 22,
+    "business": 22,
+    "chemistry": 21,
+    "computer science": 21,
+    "economics": 22,
+    "engineering": 21,
+    "health": 22,
+    "history": 22,
+    "law": 21,
+    "math": 21,
+    "other": 21,
+    "philosophy": 22,
+    "physics": 21,
+    "psychology": 21
+  },
+  "n_options_hist": {
+    "10": 230,
+    "4": 19,
+    "9": 31,
+    "7": 4,
+    "5": 2,
+    "8": 10,
+    "6": 4
+  }
+}

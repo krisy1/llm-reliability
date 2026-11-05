@@ -1,0 +1,16 @@
+{
+  "dataset": "BFCL v4 multiple",
+  "gorilla_commit": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+  "n_items": 100,
+  "n_functions_hist": {
+    "2": 38,
+    "3": 44,
+    "4": 18
+  },
+  "gold_position_hist": {
+    "0": 33,
+    "1": 39,
+    "2": 20,
+    "3": 8
+  }
+}

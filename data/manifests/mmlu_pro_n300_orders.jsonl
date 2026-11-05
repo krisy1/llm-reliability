@@ -1,0 +1,600 @@
+{"item_id": "mmlu_2876", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_2876", "order_id": "o1", "perm": [9, 1, 0, 7, 5, 4, 2, 3, 6, 8], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_2891", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_2891", "order_id": "o1", "perm": [7, 8, 6, 9, 0, 1, 5, 4, 2, 3], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_2923", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_2923", "order_id": "o1", "perm": [2, 0, 3, 1], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_2931", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_2931", "order_id": "o1", "perm": [6, 9, 0, 3, 8, 4, 2, 5, 1, 7], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_3007", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_3007", "order_id": "o1", "perm": [6, 7, 3, 8, 0, 2, 5, 4, 1], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_3016", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_3016", "order_id": "o1", "perm": [8, 0, 9, 5, 6, 3, 1, 7, 2, 4], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_3176", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_3176", "order_id": "o1", "perm": [4, 0, 3, 9, 6, 2, 8, 5, 7, 1], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_3237", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_3237", "order_id": "o1", "perm": [8, 6, 4, 7, 9, 0, 1, 3, 2, 5], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_3259", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_3259", "order_id": "o1", "perm": [7, 4, 2, 8, 3, 6, 5, 9, 1, 0], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_3266", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_3266", "order_id": "o1", "perm": [1, 6, 5, 3, 0, 9, 8, 2, 7, 4], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_3268", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_3268", "order_id": "o1", "perm": [1, 3, 6, 4, 5, 7, 2, 9, 0, 8], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_3278", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_3278", "order_id": "o1", "perm": [3, 0, 1, 6, 4, 2, 9, 7, 5, 8], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_3299", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_3299", "order_id": "o1", "perm": [1, 4, 9, 2, 6, 8, 0, 5, 7, 3], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_3312", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_3312", "order_id": "o1", "perm": [6, 8, 7, 9, 1, 4, 3, 0, 2, 5], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_3322", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_3322", "order_id": "o1", "perm": [6, 7, 9, 2, 3, 1, 8, 0, 5, 4], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_3343", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_3343", "order_id": "o1", "perm": [1, 8, 7, 2, 9, 5, 0, 3, 4, 6], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_3359", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_3359", "order_id": "o1", "perm": [1, 0, 8, 9, 6, 2, 5, 3, 7, 4], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_3401", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_3401", "order_id": "o1", "perm": [0, 3, 8, 4, 6, 1, 2, 9, 7, 5], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_3411", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_3411", "order_id": "o1", "perm": [8, 5, 3, 1, 4, 0, 2, 6, 9, 7], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_3440", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_3440", "order_id": "o1", "perm": [8, 1, 5, 4, 7, 9, 0, 6, 3, 2], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_3460", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_3460", "order_id": "o1", "perm": [3, 0, 6, 1, 7, 9, 2, 5, 8, 4], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_3491", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_3491", "order_id": "o1", "perm": [4, 0, 8, 1, 6, 7, 9, 3, 2, 5], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_233", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_233", "order_id": "o1", "perm": [8, 1, 9, 4, 6, 2, 5, 0, 7, 3], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_304", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_304", "order_id": "o1", "perm": [7, 5, 2, 8, 4, 3, 0, 1, 9, 6], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_324", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_324", "order_id": "o1", "perm": [1, 4, 2, 3, 9, 8, 5, 7, 0, 6], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_343", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_343", "order_id": "o1", "perm": [2, 8, 3, 7, 6, 1, 9, 5, 0, 4], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_409", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_409", "order_id": "o1", "perm": [2, 1, 8, 3, 9, 4, 0, 5, 6, 7], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_415", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_415", "order_id": "o1", "perm": [1, 7, 3, 0, 5, 9, 2, 4, 8, 6], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_437", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_437", "order_id": "o1", "perm": [0, 3, 4, 6, 1, 5, 2], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_441", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_441", "order_id": "o1", "perm": [7, 2, 5, 4, 6, 9, 1, 3, 8, 0], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_486", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_486", "order_id": "o1", "perm": [9, 4, 2, 1, 7, 3, 6, 5, 0, 8], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_518", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_518", "order_id": "o1", "perm": [7, 8, 1, 2, 9, 3, 0, 5, 6, 4], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_532", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_532", "order_id": "o1", "perm": [5, 6, 4, 9, 0, 8, 2, 7, 1, 3], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_545", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_545", "order_id": "o1", "perm": [8, 6, 0, 7, 2, 9, 1, 4, 3, 5], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_550", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_550", "order_id": "o1", "perm": [8, 3, 9, 1, 6, 0, 7, 5, 2, 4], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_588", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_588", "order_id": "o1", "perm": [8, 5, 7, 0, 9, 4, 6, 3, 2, 1], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_698", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_698", "order_id": "o1", "perm": [9, 0, 3, 8, 5, 4, 7, 1, 2, 6], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_702", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_702", "order_id": "o1", "perm": [9, 0, 6, 8, 5, 3, 4, 1, 7, 2], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_756", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_756", "order_id": "o1", "perm": [6, 0, 3, 2, 8, 7, 5, 9, 4, 1], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_802", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_802", "order_id": "o1", "perm": [5, 2, 6, 3, 9, 0, 8, 7, 4, 1], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_820", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_820", "order_id": "o1", "perm": [2, 3, 0, 1], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_821", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_821", "order_id": "o1", "perm": [5, 7, 9, 6, 3, 8, 4, 1, 2, 0], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_823", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_823", "order_id": "o1", "perm": [4, 3, 6, 7, 9, 1, 2, 0, 5, 8], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_858", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_858", "order_id": "o1", "perm": [1, 8, 2, 6, 3, 0, 9, 4, 5, 7], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_3528", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_3528", "order_id": "o1", "perm": [7, 3, 0, 4, 9, 6, 8, 1, 5, 2], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_3564", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_3564", "order_id": "o1", "perm": [5, 2, 9, 6, 1, 7, 0, 8, 3, 4], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_3928", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_3928", "order_id": "o1", "perm": [4, 0, 8, 7, 2, 6, 3, 9, 1, 5], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_3943", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_3943", "order_id": "o1", "perm": [9, 3, 5, 1, 8, 4, 0, 7, 2, 6], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_3998", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_3998", "order_id": "o1", "perm": [7, 8, 9, 5, 4, 2, 0, 6, 3, 1], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_4031", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_4031", "order_id": "o1", "perm": [8, 6, 7, 0, 1, 2, 5, 4, 9, 3], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_4057", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_4057", "order_id": "o1", "perm": [1, 6, 4, 3, 8, 5, 7, 0, 2], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_4085", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_4085", "order_id": "o1", "perm": [5, 7, 0, 2, 4, 1, 3, 9, 8, 6], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_4140", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_4140", "order_id": "o1", "perm": [3, 9, 8, 5, 1, 0, 7, 2, 4, 6], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_4180", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_4180", "order_id": "o1", "perm": [3, 8, 5, 0, 2, 9, 4, 7, 6, 1], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_4224", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_4224", "order_id": "o1", "perm": [4, 5, 6, 2, 7, 0, 8, 3, 1, 9], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_4291", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_4291", "order_id": "o1", "perm": [2, 6, 9, 8, 4, 3, 1, 7, 0, 5], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_4343", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_4343", "order_id": "o1", "perm": [0, 4, 9, 8, 2, 7, 5, 6, 1, 3], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_4364", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_4364", "order_id": "o1", "perm": [0, 9, 5, 7, 3, 2, 1, 6, 4, 8], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_4432", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_4432", "order_id": "o1", "perm": [2, 6, 1, 3, 4, 8, 0, 7, 9, 5], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_4434", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_4434", "order_id": "o1", "perm": [0, 9, 1, 5, 7, 2, 6, 4, 3, 8], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_4498", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_4498", "order_id": "o1", "perm": [4, 9, 8, 1, 3, 0, 5, 7, 6, 2], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_4595", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_4595", "order_id": "o1", "perm": [1, 0, 2, 8, 4, 9, 7, 3, 5, 6], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_4619", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_4619", "order_id": "o1", "perm": [6, 0, 2, 4, 5, 1, 3, 7, 8], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_4661", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_4661", "order_id": "o1", "perm": [5, 9, 7, 1, 3, 8, 6, 0, 4, 2], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_4666", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_4666", "order_id": "o1", "perm": [0, 2, 5, 4, 1, 8, 6, 7, 9, 3], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_10364", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_10364", "order_id": "o1", "perm": [0, 2, 8, 5, 4, 7, 1, 3, 9, 6], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_10371", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_10371", "order_id": "o1", "perm": [1, 0, 5, 9, 3, 7, 2, 4, 6, 8], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_10403", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_10403", "order_id": "o1", "perm": [8, 0, 4, 5, 7, 2, 6, 1, 9, 3], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_10428", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_10428", "order_id": "o1", "perm": [5, 7, 0, 1, 3, 2, 9, 6, 4, 8], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_10438", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_10438", "order_id": "o1", "perm": [6, 5, 1, 2, 7, 8, 9, 3, 0, 4], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_10470", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_10470", "order_id": "o1", "perm": [7, 8, 3, 0, 6, 2, 9, 5, 4, 1], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_10479", "order_id": "o0", "perm": [0, 1, 2, 3, 4], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_10479", "order_id": "o1", "perm": [2, 3, 1, 0, 4], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_10481", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_10481", "order_id": "o1", "perm": [3, 4, 2, 0, 8, 5, 7, 6, 1], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_10508", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_10508", "order_id": "o1", "perm": [8, 2, 0, 7, 4, 6, 1, 9, 5, 3], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_10524", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_10524", "order_id": "o1", "perm": [1, 3, 8, 6, 0, 5, 4, 2, 9, 7], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_10568", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_10568", "order_id": "o1", "perm": [4, 3, 9, 1, 2, 5, 8, 0, 6, 7], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_10583", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_10583", "order_id": "o1", "perm": [6, 5, 1, 4, 7, 3, 2, 0], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_10600", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_10600", "order_id": "o1", "perm": [7, 4, 6, 0, 1, 2, 5, 3], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_10612", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_10612", "order_id": "o1", "perm": [3, 5, 7, 1, 6, 9, 4, 0, 8, 2], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_10649", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_10649", "order_id": "o1", "perm": [4, 5, 0, 3, 1, 2], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_10671", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_10671", "order_id": "o1", "perm": [5, 2, 1, 6, 3, 0, 4], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_10720", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_10720", "order_id": "o1", "perm": [5, 3, 0, 6, 7, 4, 2, 1, 9, 8], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_10743", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_10743", "order_id": "o1", "perm": [0, 2, 9, 7, 4, 1, 6, 8, 5, 3], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_10746", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_10746", "order_id": "o1", "perm": [4, 3, 2, 6, 9, 0, 5, 8, 7, 1], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_10750", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_10750", "order_id": "o1", "perm": [6, 2, 8, 0, 4, 5, 3, 1, 7], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_10770", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_10770", "order_id": "o1", "perm": [3, 5, 9, 1, 7, 8, 6, 2, 0, 4], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_6884", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_6884", "order_id": "o1", "perm": [2, 0, 3, 1], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_6891", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_6891", "order_id": "o1", "perm": [1, 7, 4, 8, 2, 5, 3, 6, 0], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_6968", "order_id": "o0", "perm": [0, 1, 2, 3, 4], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_6968", "order_id": "o1", "perm": [3, 1, 0, 4, 2], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_6981", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_6981", "order_id": "o1", "perm": [3, 4, 8, 1, 9, 7, 5, 2, 0, 6], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_7022", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_7022", "order_id": "o1", "perm": [6, 1, 4, 8, 5, 9, 0, 3, 7, 2], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_7029", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_7029", "order_id": "o1", "perm": [3, 1, 0, 2], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_7037", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_7037", "order_id": "o1", "perm": [8, 7, 6, 5, 9, 4, 2, 1, 3, 0], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_7080", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_7080", "order_id": "o1", "perm": [0, 8, 9, 1, 6, 5, 7, 3, 2, 4], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_7292", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_7292", "order_id": "o1", "perm": [8, 7, 5, 9, 3, 2, 6, 1, 0, 4], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_7322", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_7322", "order_id": "o1", "perm": [1, 3, 0, 2], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_7343", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_7343", "order_id": "o1", "perm": [8, 7, 0, 6, 4, 2, 9, 3, 5, 1], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_7372", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_7372", "order_id": "o1", "perm": [9, 7, 5, 6, 0, 3, 1, 8, 2, 4], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_7391", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_7391", "order_id": "o1", "perm": [3, 7, 6, 0, 2, 5, 1, 9, 8, 4], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_7459", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_7459", "order_id": "o1", "perm": [3, 6, 5, 4, 2, 8, 9, 0, 7, 1], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_7488", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_7488", "order_id": "o1", "perm": [6, 0, 1, 3, 2, 4, 8, 7, 9, 5], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_7496", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_7496", "order_id": "o1", "perm": [8, 4, 0, 9, 1, 2, 7, 6, 5, 3], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_7501", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_7501", "order_id": "o1", "perm": [7, 1, 6, 8, 5, 4, 0, 3, 2, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_7576", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_7576", "order_id": "o1", "perm": [4, 3, 6, 7, 0, 1, 2, 5], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_7601", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_7601", "order_id": "o1", "perm": [1, 7, 5, 4, 2, 6, 3, 0, 8], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_7613", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_7613", "order_id": "o1", "perm": [3, 4, 0, 5, 1, 8, 9, 7, 6, 2], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_7624", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_7624", "order_id": "o1", "perm": [4, 3, 7, 8, 6, 0, 1, 2, 5, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_7674", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_7674", "order_id": "o1", "perm": [9, 1, 7, 5, 0, 8, 3, 2, 6, 4], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_11316", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_11316", "order_id": "o1", "perm": [3, 6, 9, 0, 8, 2, 5, 7, 4, 1], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_11365", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_11365", "order_id": "o1", "perm": [4, 7, 3, 5, 9, 0, 2, 8, 6, 1], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_11408", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_11408", "order_id": "o1", "perm": [8, 3, 1, 5, 6, 0, 4, 9, 7, 2], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_11510", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_11510", "order_id": "o1", "perm": [7, 6, 8, 5, 2, 1, 9, 4, 0, 3], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_11554", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_11554", "order_id": "o1", "perm": [7, 6, 5, 8, 2, 0, 1, 4, 3, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_11606", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_11606", "order_id": "o1", "perm": [7, 2, 0, 5, 4, 9, 8, 6, 1, 3], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_11607", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_11607", "order_id": "o1", "perm": [8, 3, 0, 9, 6, 4, 5, 1, 2, 7], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_11691", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_11691", "order_id": "o1", "perm": [6, 0, 5, 2, 4, 9, 7, 8, 1, 3], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_11692", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_11692", "order_id": "o1", "perm": [8, 9, 6, 5, 2, 3, 0, 4, 7, 1], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_11736", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_11736", "order_id": "o1", "perm": [4, 8, 1, 6, 5, 9, 3, 7, 2, 0], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_11785", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_11785", "order_id": "o1", "perm": [0, 3, 1, 2], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_11820", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_11820", "order_id": "o1", "perm": [9, 4, 7, 2, 0, 5, 1, 8, 3, 6], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_11821", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_11821", "order_id": "o1", "perm": [9, 3, 7, 1, 2, 4, 5, 8, 6, 0], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_11856", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_11856", "order_id": "o1", "perm": [2, 1, 0, 6, 5, 3, 9, 8, 4, 7], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_11923", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_11923", "order_id": "o1", "perm": [2, 1, 0, 3], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_11925", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_11925", "order_id": "o1", "perm": [7, 3, 1, 0, 6, 5, 4, 8, 9, 2], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_12067", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_12067", "order_id": "o1", "perm": [9, 5, 2, 8, 1, 4, 7, 6, 3, 0], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_12178", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_12178", "order_id": "o1", "perm": [8, 9, 6, 3, 5, 0, 2, 1, 4, 7], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_12194", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_12194", "order_id": "o1", "perm": [7, 0, 4, 9, 6, 8, 2, 1, 3, 5], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_12241", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_12241", "order_id": "o1", "perm": [1, 3, 7, 2, 4, 0, 6, 9, 8, 5], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_12250", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_12250", "order_id": "o1", "perm": [7, 1, 0, 8, 2, 6, 9, 4, 3, 5], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_6054", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_6054", "order_id": "o1", "perm": [2, 6, 1, 5, 7, 4, 0, 3], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_6114", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_6114", "order_id": "o1", "perm": [8, 4, 6, 1, 7, 0, 9, 3, 2, 5], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_6175", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_6175", "order_id": "o1", "perm": [3, 0, 2, 1], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_6281", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_6281", "order_id": "o1", "perm": [9, 0, 8, 7, 5, 1, 3, 6, 4, 2], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_6338", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_6338", "order_id": "o1", "perm": [3, 1, 0, 4, 5, 7, 6, 8, 2], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_6371", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_6371", "order_id": "o1", "perm": [6, 3, 8, 0, 2, 4, 9, 7, 1, 5], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_6379", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_6379", "order_id": "o1", "perm": [1, 2, 0, 3], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_6427", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_6427", "order_id": "o1", "perm": [6, 0, 4, 2, 8, 1, 5, 7, 3], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_6432", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_6432", "order_id": "o1", "perm": [8, 3, 1, 0, 5, 2, 6, 9, 4, 7], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_6497", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_6497", "order_id": "o1", "perm": [9, 2, 7, 4, 8, 3, 6, 1, 5, 0], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_6528", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_6528", "order_id": "o1", "perm": [3, 1, 4, 9, 5, 8, 2, 7, 0, 6], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_6562", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_6562", "order_id": "o1", "perm": [5, 0, 3, 8, 2, 6, 1, 7, 4, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_6565", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_6565", "order_id": "o1", "perm": [9, 0, 8, 6, 7, 1, 2, 4, 3, 5], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_6570", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_6570", "order_id": "o1", "perm": [6, 7, 0, 2, 3, 5, 1, 4, 8], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_6575", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_6575", "order_id": "o1", "perm": [4, 5, 8, 1, 7, 9, 6, 0, 3, 2], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_6584", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_6584", "order_id": "o1", "perm": [7, 3, 0, 9, 8, 1, 2, 6, 5, 4], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_6600", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_6600", "order_id": "o1", "perm": [7, 4, 0, 6, 2, 3, 5, 8, 1], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_6686", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_6686", "order_id": "o1", "perm": [3, 1, 4, 2, 7, 9, 5, 0, 6, 8], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_6718", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_6718", "order_id": "o1", "perm": [7, 6, 0, 8, 4, 9, 2, 5, 1, 3], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_6747", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_6747", "order_id": "o1", "perm": [9, 3, 2, 4, 5, 1, 7, 8, 6, 0], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_6767", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_6767", "order_id": "o1", "perm": [7, 3, 5, 1, 8, 4, 2, 0, 6], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_6822", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_6822", "order_id": "o1", "perm": [4, 1, 3, 8, 0, 7, 5, 6, 2, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_4715", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_4715", "order_id": "o1", "perm": [7, 8, 0, 6, 2, 3, 1, 4, 5], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_4716", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_4716", "order_id": "o1", "perm": [3, 5, 7, 9, 1, 0, 8, 4, 6, 2], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_4721", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_4721", "order_id": "o1", "perm": [4, 3, 5, 7, 0, 6, 1, 2], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_4727", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_4727", "order_id": "o1", "perm": [6, 8, 7, 2, 1, 9, 5, 3, 4, 0], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_4736", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_4736", "order_id": "o1", "perm": [8, 9, 3, 5, 4, 7, 1, 0, 6, 2], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_4753", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_4753", "order_id": "o1", "perm": [2, 3, 1, 0], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_4757", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_4757", "order_id": "o1", "perm": [0, 2, 1, 3], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_4760", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_4760", "order_id": "o1", "perm": [4, 0, 8, 3, 6, 7, 5, 2, 9, 1], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_4768", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_4768", "order_id": "o1", "perm": [6, 0, 2, 1, 4, 7, 5, 8, 3], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_4771", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_4771", "order_id": "o1", "perm": [1, 5, 6, 8, 4, 2, 9, 3, 7, 0], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_4775", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_4775", "order_id": "o1", "perm": [8, 4, 2, 0, 5, 1, 6, 3, 7], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_4830", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_4830", "order_id": "o1", "perm": [8, 9, 7, 1, 4, 6, 5, 2, 0, 3], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_4839", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_4839", "order_id": "o1", "perm": [1, 2, 0, 3], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_4859", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_4859", "order_id": "o1", "perm": [7, 5, 2, 4, 3, 0, 6, 1], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_4884", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_4884", "order_id": "o1", "perm": [2, 8, 5, 0, 7, 9, 3, 6, 4, 1], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_4918", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_4918", "order_id": "o1", "perm": [2, 6, 8, 5, 1, 0, 4, 3, 9, 7], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_4920", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_4920", "order_id": "o1", "perm": [0, 9, 5, 7, 1, 3, 6, 4, 2, 8], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_4924", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_4924", "order_id": "o1", "perm": [1, 8, 2, 5, 3, 7, 0, 6, 9, 4], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_4958", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_4958", "order_id": "o1", "perm": [0, 3, 1, 2], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_4964", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_4964", "order_id": "o1", "perm": [7, 3, 4, 0, 2, 6, 8, 1, 5], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_4974", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_4974", "order_id": "o1", "perm": [2, 1, 5, 8, 9, 6, 0, 4, 3, 7], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_5000", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_5000", "order_id": "o1", "perm": [8, 6, 3, 1, 4, 9, 7, 5, 2, 0], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_945", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_945", "order_id": "o1", "perm": [3, 5, 1, 2, 0, 4], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_1015", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_1015", "order_id": "o1", "perm": [2, 1, 4, 0, 9, 3, 8, 7, 5, 6], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_1052", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_1052", "order_id": "o1", "perm": [8, 5, 2, 0, 4, 7, 3, 6, 1, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_1066", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_1066", "order_id": "o1", "perm": [8, 5, 2, 6, 4, 0, 3, 1, 7], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_1117", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_1117", "order_id": "o1", "perm": [4, 6, 2, 7, 0, 8, 5, 1, 9, 3], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_1174", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_1174", "order_id": "o1", "perm": [2, 3, 8, 9, 5, 6, 4, 0, 1, 7], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_1185", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_1185", "order_id": "o1", "perm": [7, 5, 6, 2, 3, 9, 0, 8, 1, 4], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_1195", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_1195", "order_id": "o1", "perm": [1, 9, 2, 7, 6, 0, 3, 8, 4, 5], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_1199", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_1199", "order_id": "o1", "perm": [4, 5, 2, 3, 6, 0, 9, 7, 8, 1], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_1394", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_1394", "order_id": "o1", "perm": [4, 2, 5, 6, 0, 8, 3, 7, 1], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_1487", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_1487", "order_id": "o1", "perm": [0, 3, 2, 1], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_1667", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_1667", "order_id": "o1", "perm": [3, 1, 0, 2], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_1669", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_1669", "order_id": "o1", "perm": [2, 1, 7, 8, 5, 9, 4, 0, 6, 3], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_1675", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_1675", "order_id": "o1", "perm": [4, 3, 0, 1, 6, 8, 9, 2, 7, 5], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_1768", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_1768", "order_id": "o1", "perm": [2, 0, 1, 3], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_1810", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_1810", "order_id": "o1", "perm": [3, 6, 5, 1, 8, 2, 0, 4, 9, 7], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_1817", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_1817", "order_id": "o1", "perm": [8, 7, 3, 0, 5, 6, 4, 2, 1, 9], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_1823", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_1823", "order_id": "o1", "perm": [4, 2, 1, 6, 3, 8, 7, 0, 5], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_1886", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_1886", "order_id": "o1", "perm": [9, 1, 4, 3, 8, 5, 2, 6, 0, 7], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_1897", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_1897", "order_id": "o1", "perm": [4, 6, 2, 1, 5, 3, 0], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_1961", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_1961", "order_id": "o1", "perm": [5, 4, 7, 8, 6, 2, 9, 3, 1, 0], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_7716", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_7716", "order_id": "o1", "perm": [8, 7, 6, 5, 3, 1, 2, 4, 9, 0], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_7720", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_7720", "order_id": "o1", "perm": [1, 4, 8, 7, 2, 6, 0, 5, 3], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_7924", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_7924", "order_id": "o1", "perm": [2, 9, 5, 8, 1, 7, 4, 3, 0, 6], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_7965", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_7965", "order_id": "o1", "perm": [2, 9, 1, 6, 3, 7, 0, 4, 5, 8], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_8075", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_8075", "order_id": "o1", "perm": [6, 4, 5, 2, 9, 0, 1, 8, 7, 3], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_8167", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_8167", "order_id": "o1", "perm": [0, 8, 2, 5, 7, 3, 4, 6, 1, 9], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_8226", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_8226", "order_id": "o1", "perm": [7, 4, 9, 2, 8, 0, 3, 6, 1, 5], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_8313", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_8313", "order_id": "o1", "perm": [2, 6, 3, 4, 9, 0, 5, 8, 1, 7], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_8355", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_8355", "order_id": "o1", "perm": [6, 0, 3, 4, 1, 7, 8, 5, 2], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_8471", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_8471", "order_id": "o1", "perm": [4, 8, 5, 2, 0, 9, 7, 3, 6, 1], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_8569", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_8569", "order_id": "o1", "perm": [9, 6, 7, 3, 0, 5, 8, 2, 4, 1], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_8580", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_8580", "order_id": "o1", "perm": [5, 6, 9, 0, 1, 2, 8, 7, 4, 3], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_8663", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_8663", "order_id": "o1", "perm": [4, 9, 1, 2, 3, 7, 0, 8, 6, 5], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_8696", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_8696", "order_id": "o1", "perm": [8, 7, 6, 9, 0, 1, 5, 2, 4, 3], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_8732", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_8732", "order_id": "o1", "perm": [2, 7, 1, 0, 5, 3, 8, 4, 9, 6], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_8735", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_8735", "order_id": "o1", "perm": [1, 4, 7, 8, 2, 6, 0, 5, 9, 3], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_8829", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_8829", "order_id": "o1", "perm": [2, 7, 3, 1, 9, 6, 0, 5, 8, 4], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_8833", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_8833", "order_id": "o1", "perm": [0, 8, 1, 4, 5, 9, 7, 6, 3, 2], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_8868", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_8868", "order_id": "o1", "perm": [9, 5, 8, 7, 4, 0, 6, 2, 3, 1], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_8898", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_8898", "order_id": "o1", "perm": [6, 1, 5, 0, 7, 2, 4, 8, 3], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_9026", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_9026", "order_id": "o1", "perm": [7, 9, 3, 1, 8, 6, 5, 4, 2, 0], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_5169", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_5169", "order_id": "o1", "perm": [6, 0, 5, 4, 2, 3, 9, 1, 7, 8], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_5191", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_5191", "order_id": "o1", "perm": [2, 6, 9, 1, 3, 8, 4, 7, 0, 5], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_5221", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_5221", "order_id": "o1", "perm": [3, 7, 8, 1, 4, 9, 2, 5, 6, 0], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_5306", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_5306", "order_id": "o1", "perm": [0, 5, 2, 7, 6, 9, 4, 3, 8, 1], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_5315", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_5315", "order_id": "o1", "perm": [6, 8, 3, 9, 7, 2, 0, 5, 1, 4], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_5348", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_5348", "order_id": "o1", "perm": [6, 4, 7, 5, 8, 9, 2, 0, 1, 3], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_5389", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_5389", "order_id": "o1", "perm": [6, 7, 1, 5, 2, 0, 8, 9, 4, 3], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_5421", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_5421", "order_id": "o1", "perm": [8, 6, 0, 4, 3, 9, 1, 2, 5, 7], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_5432", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_5432", "order_id": "o1", "perm": [5, 9, 4, 3, 6, 1, 8, 2, 7, 0], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_5450", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_5450", "order_id": "o1", "perm": [7, 0, 3, 8, 6, 9, 2, 1, 5, 4], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_5453", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_5453", "order_id": "o1", "perm": [3, 4, 0, 5, 7, 1, 6, 2], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_5482", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_5482", "order_id": "o1", "perm": [6, 7, 3, 1, 0, 8, 5, 2, 4], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_5517", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_5517", "order_id": "o1", "perm": [4, 0, 6, 1, 5, 8, 7, 2, 9, 3], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_5557", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_5557", "order_id": "o1", "perm": [3, 0, 5, 4, 2, 1, 6, 7], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_5603", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_5603", "order_id": "o1", "perm": [8, 3, 5, 7, 2, 6, 0, 1, 9, 4], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_5637", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_5637", "order_id": "o1", "perm": [8, 7, 5, 1, 9, 4, 3, 2, 6, 0], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_5655", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_5655", "order_id": "o1", "perm": [2, 3, 0, 4, 6, 5, 1], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_5793", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_5793", "order_id": "o1", "perm": [1, 9, 0, 4, 3, 8, 6, 7, 5, 2], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_5903", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_5903", "order_id": "o1", "perm": [8, 5, 0, 2, 7, 6, 9, 3, 4, 1], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_5910", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_5910", "order_id": "o1", "perm": [6, 9, 4, 0, 3, 8, 5, 1, 2, 7], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_5926", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_5926", "order_id": "o1", "perm": [7, 1, 4, 8, 0, 2, 5, 3, 6], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_10777", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_10777", "order_id": "o1", "perm": [4, 9, 2, 0, 3, 8, 6, 1, 7, 5], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_10784", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_10784", "order_id": "o1", "perm": [6, 7, 5, 4, 3, 2, 8, 0, 9, 1], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_10835", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_10835", "order_id": "o1", "perm": [3, 4, 9, 7, 2, 1, 8, 5, 6, 0], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_10843", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_10843", "order_id": "o1", "perm": [1, 8, 5, 2, 7, 6, 9, 3, 4, 0], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_10909", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_10909", "order_id": "o1", "perm": [2, 1, 6, 5, 8, 9, 3, 0, 7, 4], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_10913", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_10913", "order_id": "o1", "perm": [4, 8, 2, 3, 0, 7, 5, 6, 1], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_10946", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_10946", "order_id": "o1", "perm": [4, 5, 0, 3, 2, 1], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_10947", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_10947", "order_id": "o1", "perm": [3, 9, 0, 2, 5, 8, 7, 4, 1, 6], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_10965", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_10965", "order_id": "o1", "perm": [9, 4, 5, 8, 2, 6, 1, 0, 3, 7], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_10987", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_10987", "order_id": "o1", "perm": [3, 5, 0, 4, 2, 6, 9, 1, 7, 8], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_11011", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_11011", "order_id": "o1", "perm": [3, 0, 1, 2], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_11016", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_11016", "order_id": "o1", "perm": [5, 8, 7, 4, 9, 3, 1, 6, 0, 2], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_11023", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_11023", "order_id": "o1", "perm": [0, 5, 2, 7, 6, 3, 9, 8, 1, 4], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_11052", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_11052", "order_id": "o1", "perm": [1, 0, 3, 2], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_11073", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_11073", "order_id": "o1", "perm": [6, 2, 4, 3, 1, 9, 0, 5, 8, 7], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_11106", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_11106", "order_id": "o1", "perm": [7, 3, 4, 9, 6, 0, 1, 2, 5, 8], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_11137", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_11137", "order_id": "o1", "perm": [5, 9, 4, 6, 1, 7, 3, 8, 2, 0], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_11149", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_11149", "order_id": "o1", "perm": [8, 1, 6, 7, 2, 0, 5, 9, 4, 3], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_11168", "order_id": "o0", "perm": [0, 1, 2, 3], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_11168", "order_id": "o1", "perm": [3, 0, 2, 1], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_11209", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_11209", "order_id": "o1", "perm": [7, 4, 0, 2, 5, 3, 6, 1, 8], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_11245", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_11245", "order_id": "o1", "perm": [1, 4, 7, 2, 6, 5, 3, 0, 9, 8], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_11272", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_11272", "order_id": "o1", "perm": [3, 4, 6, 8, 5, 1, 7, 9, 0, 2], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_9065", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_9065", "order_id": "o1", "perm": [0, 9, 8, 2, 7, 6, 4, 5, 1, 3], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_9124", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_9124", "order_id": "o1", "perm": [1, 2, 6, 4, 3, 7, 9, 5, 0, 8], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_9301", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_9301", "order_id": "o1", "perm": [2, 4, 8, 6, 7, 9, 5, 0, 3, 1], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_9307", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_9307", "order_id": "o1", "perm": [2, 9, 4, 6, 1, 8, 3, 5, 7, 0], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_9340", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_9340", "order_id": "o1", "perm": [0, 2, 7, 3, 5, 1, 4, 9, 6, 8], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_9427", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_9427", "order_id": "o1", "perm": [6, 9, 2, 1, 7, 0, 5, 3, 4, 8], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_9554", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_9554", "order_id": "o1", "perm": [8, 5, 1, 7, 2, 4, 3, 6, 0, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_9604", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_9604", "order_id": "o1", "perm": [4, 0, 9, 8, 7, 5, 2, 6, 3, 1], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_9608", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_9608", "order_id": "o1", "perm": [3, 5, 1, 7, 2, 0, 4, 8, 6, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_9635", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_9635", "order_id": "o1", "perm": [7, 2, 1, 0, 4, 6, 3, 5], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_9693", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_9693", "order_id": "o1", "perm": [6, 1, 2, 9, 3, 5, 0, 8, 7, 4], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_9710", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_9710", "order_id": "o1", "perm": [9, 8, 4, 7, 2, 6, 0, 1, 5, 3], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_9759", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_9759", "order_id": "o1", "perm": [4, 0, 3, 1, 7, 5, 8, 2, 6, 9], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_9877", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_9877", "order_id": "o1", "perm": [3, 4, 6, 0, 9, 7, 1, 5, 2, 8], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_10054", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_10054", "order_id": "o1", "perm": [4, 8, 3, 6, 1, 5, 0, 9, 2, 7], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_10062", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_10062", "order_id": "o1", "perm": [7, 5, 4, 2, 0, 8, 1, 6, 3, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_10097", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_10097", "order_id": "o1", "perm": [3, 2, 4, 1, 6, 7, 8, 5, 0], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_10154", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_10154", "order_id": "o1", "perm": [1, 6, 8, 2, 9, 0, 5, 3, 7, 4], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_10250", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_10250", "order_id": "o1", "perm": [1, 6, 4, 2, 0, 9, 7, 8, 3, 5], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_10307", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_10307", "order_id": "o1", "perm": [7, 5, 4, 3, 0, 6, 9, 1, 2, 8], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_10325", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_10325", "order_id": "o1", "perm": [1, 2, 7, 6, 4, 8, 5, 0, 3], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_2080", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_2080", "order_id": "o1", "perm": [0, 2, 7, 1, 9, 6, 8, 3, 5, 4], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_2103", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_2103", "order_id": "o1", "perm": [6, 2, 5, 4, 0, 9, 3, 8, 1, 7], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_2125", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_2125", "order_id": "o1", "perm": [2, 6, 9, 1, 8, 4, 0, 5, 3, 7], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_2213", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_2213", "order_id": "o1", "perm": [5, 4, 3, 0, 1, 2], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_2236", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_2236", "order_id": "o1", "perm": [3, 1, 7, 9, 8, 2, 0, 6, 5, 4], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_2249", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_2249", "order_id": "o1", "perm": [9, 6, 4, 8, 5, 1, 7, 2, 3, 0], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_2313", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_2313", "order_id": "o1", "perm": [5, 7, 4, 9, 0, 1, 2, 6, 8, 3], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_2322", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_2322", "order_id": "o1", "perm": [6, 3, 0, 7, 8, 2, 4, 1, 5], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_2339", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_2339", "order_id": "o1", "perm": [7, 1, 3, 5, 0, 4, 2, 9, 8, 6], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_2544", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7], "gold_index": 4, "gold_letter": "E"}
+{"item_id": "mmlu_2544", "order_id": "o1", "perm": [2, 3, 4, 5, 7, 1, 6, 0], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_2546", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_2546", "order_id": "o1", "perm": [4, 6, 5, 1, 3, 9, 8, 0, 7, 2], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_2584", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_2584", "order_id": "o1", "perm": [4, 0, 6, 2, 3, 1, 8, 9, 7, 5], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_2587", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_2587", "order_id": "o1", "perm": [7, 1, 6, 9, 4, 3, 5, 0, 8, 2], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_2634", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 1, "gold_letter": "B"}
+{"item_id": "mmlu_2634", "order_id": "o1", "perm": [1, 2, 3, 7, 5, 4, 0, 8, 6], "gold_index": 0, "gold_letter": "A"}
+{"item_id": "mmlu_2698", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8], "gold_index": 7, "gold_letter": "H"}
+{"item_id": "mmlu_2698", "order_id": "o1", "perm": [2, 6, 7, 8, 0, 4, 3, 5, 1], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_2702", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_2702", "order_id": "o1", "perm": [7, 8, 5, 0, 3, 2, 4, 1, 9, 6], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_2706", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_2706", "order_id": "o1", "perm": [8, 7, 6, 4, 5, 1, 3, 2, 9, 0], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_2725", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_2725", "order_id": "o1", "perm": [3, 4, 0, 7, 9, 8, 6, 1, 2, 5], "gold_index": 9, "gold_letter": "J"}
+{"item_id": "mmlu_2731", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 8, "gold_letter": "I"}
+{"item_id": "mmlu_2731", "order_id": "o1", "perm": [7, 5, 0, 2, 3, 8, 9, 1, 6, 4], "gold_index": 5, "gold_letter": "F"}
+{"item_id": "mmlu_2782", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 3, "gold_letter": "D"}
+{"item_id": "mmlu_2782", "order_id": "o1", "perm": [7, 9, 3, 4, 0, 2, 1, 8, 5, 6], "gold_index": 2, "gold_letter": "C"}
+{"item_id": "mmlu_2789", "order_id": "o0", "perm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "gold_index": 6, "gold_letter": "G"}
+{"item_id": "mmlu_2789", "order_id": "o1", "perm": [8, 9, 0, 4, 7, 5, 3, 2, 1, 6], "gold_index": 9, "gold_letter": "J"}
