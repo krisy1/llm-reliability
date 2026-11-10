@@ -1,0 +1,23 @@
+{
+  "n_items": 300,
+  "models": [
+    "granite3.3-2b",
+    "llama3.2-3b",
+    "phi3.5-mini",
+    "qwen2.5-3b",
+    "smollm3-3b"
+  ],
+  "runs_per_item": 12,
+  "H1_mean_minus_reliable_pts": {
+    "granite3.3-2b": 19.7,
+    "llama3.2-3b": 24.2,
+    "phi3.5-mini": 22.5,
+    "qwen2.5-3b": 17.4,
+    "smollm3-3b": 19.8
+  },
+  "H1_holds_for_all": true,
+  "n_pairs": 10,
+  "discordant_pairs_greedy_vs_reliable": 4,
+  "H3_significant_discordant_pairs": 0,
+  "kendall_tau_greedy_vs_reliable": 0.19999999999999998
+}
