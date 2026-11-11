@@ -1,59 +1,47 @@
-# Pilot notes — CPU smoke test (27 Oct 2026)
+---
 
-**Purpose:** check that the pipeline works end to end, not to produce research results.
-Both models are tiny (0.36–0.5B) and close to chance on MMLU-Pro, so none of these numbers
-belongs in the paper's results section. They can go in the mid-term PPT as "progress so far".
+## 2. `PILOT_NOTES.md`
 
-Setup: 50 stratified MMLU-Pro items, original wording only (rewordings not generated yet),
-2 option orders × (2 sampled seeds + 1 greedy) = 6 runs per item per model, 600 generations in
-total. CPU (2 cores, float32), transformers backend, batch size 16. About 8 minutes per model.
+```markdown
+# Pilot & Execution Notes (Completed Record)
 
-## Reliability card (smoke test)
+This file documents the pre-main-run verification pilots, the M1 prefill trigger decision, and the final `s2` factorial execution parameters reported in the paper (`commit 1dd5bb8`).
 
-| Model | Greedy acc | Mean acc | Reliable acc | Seed flip | Order flip | Parse fail |
-|---|---:|---:|---:|---:|---:|---:|
-| Qwen2.5-0.5B-Instruct | 12.0 [4, 22] | 17.0 [9.5, 25.5] | 4.0 [0, 10] | 12.0 [6, 19] | 20.0 [10, 32] | 46.3 |
-| SmolLM2-360M-Instruct | 14.0 [4, 24] | 13.0 [7.5, 19] | 2.0 [0, 6] | 14.0 [8, 20] | 32.0 [20, 46] | 0.0 |
+---
 
-%, 95% bootstrap CI over items. Chance is about 11%.
+## 1. CPU Smoke Pilot (Pipeline Verification Only)
 
-## What the pilot caught
+Before running GPU experiments on Kaggle, the end-to-end pipeline was verified on CPU (`float32`) using two sub-billion-parameter models (`Qwen/Qwen2.5-0.5B-Instruct` and `HuggingFaceTB/SmolLM2-360M-Instruct`) across 50 MMLU-Pro items (`smoke_n50_w0_o2_s2.jsonl`) and 20 BFCL items (`smoke_bfcl20.jsonl`).
 
-1. **"Explain first" behaviour.** Qwen2.5-0.5B ignores "letter only" in 44% of greedy runs and
-   starts with "To solve this problem, we need to…". With `max_new_tokens = 8` this is a parse
-   failure. The proposal flagged this as a pilot risk.
-2. **An assistant prefill helps one model and hurts another.** Starting the assistant turn with
-   `The answer is` (same text for every model) gave:
+* **MMLU-Pro Smoke Outcome ($N=50$, 6 runs/item):**
+  * `qwen2.5-0.5b`: 12.0% greedy accuracy, 17.0% mean accuracy, 4.0% reliable accuracy, 46.3% parse failure rate (conversational preambles truncated at 8 tokens).
+  * `smollm2-360m`: 14.0% greedy accuracy, 13.0% mean accuracy, 2.0% reliable accuracy, 0.0% parse failure rate, and a **90.0% order answer-change rate** (exhibiting strong positional bias toward option letter `"B"` in 42% of unprefilled runs).
+* **Exclusion from Main Results:** Because both sub-billion models perform near the ~10% random-guess baseline on 10-option MMLU-Pro, they are excluded from all main rankings (`--ranking-only`).
 
-   | Model | Greedy acc, no prefill | with prefill | Parse fail, no prefill | with prefill |
-   |---|---:|---:|---:|---:|
-   | Qwen2.5-0.5B | 14% | 21% | 44% | 2% |
-   | SmolLM2-360M | 16% | 6% | 0% | 0% |
+---
 
-   With the prefill, SmolLM2 answers "C" in 74% of runs (without it, "B" in 42%). The prefill
-   moves its **label preference** rather than its knowledge — the effect Zheng et al. (2024)
-   describe. One harmless-looking format choice reverses the order of the two models, which
-   supports the paper's motivation.
-3. **Label bias is visible already:** SmolLM2's order flip rate (32%) is more than twice its
-   seed noise floor (14%).
-4. **Parser safety:** a test caught that "I think…" would have been read as option I. Fixed:
-   "letter + space + text" is not accepted.
+## 2. M1 Prefill Pilot & Global Trigger Decision
 
-## Decisions for the Kaggle pilot (M1) with the real 3B models
+Per Section 6.4 of the paper, we pre-specified rule **M1**: if any 2–4B ranking model exceeded a **10% parse-failure rate** on a 50-item greedy MMLU-Pro pilot (`pilot_prefill_greedy.jsonl`, 100 runs per model comparing no prefill vs. assistant prefill `"The answer is"`), the prefill `"The answer is"` would be applied uniformly to all models in the main runs.
 
-* Run `pilot_prefill_greedy` (50 items, greedy, with and without prefill) for all 5 ranking models.
-* Rule, decided *before* seeing the main results: use no prefill unless at least one model has
-  a parse-failure rate above 10%; in that case use the prefill for **all** models. Write the
-  rule and the choice in the paper's method section, and report the comparison in an appendix.
-* Time the largest model (Phi-3.5-mini) on 50 items × 30 runs to confirm the compute budget.
+### Empirical Pilot Outcome (Kaggle GPU, `float16`)
+* **Without prefill:** `qwen2.5-3b` failed to parse on **100.0%** of pilot items because its conversational preamble (`"To find the correct..."`) exceeded the 8-token generation budget before naming an option letter.
+* **With prefill (`"The answer is"`):** Parse failures dropped to **0.0%–5.0%** across all five models:
+  * `qwen2.5-3b`: 39.0% greedy acc, 0.0% parse fail (wall time: 103.4s)
+  * `phi3.5-mini`: 38.0% greedy acc, 5.0% parse fail (wall time: 84.9s)
+  * `smollm3-3b`: 38.0% greedy acc, 4.0% parse fail (wall time: 70.5s)
+  * `llama3.2-3b`: 36.0% greedy acc, 0.0% parse fail (wall time: 60.0s)
+  * `granite3.3-2b`: 33.0% greedy acc, 0.0% parse fail (wall time: 62.8s)
+* **Decision Locked:** Rule M1 was triggered. All main MMLU-Pro evaluations were executed with `--prefill "The answer is"`.
 
-## BFCL multiple — CPU smoke test (27 Oct 2026)
+---
 
-Qwen2.5-0.5B-Instruct, the first 20 items, original wording, 2 function orders × (1 sampled
-seed + greedy) = 80 runs, about 6 minutes on CPU.
+## 3. Main Evaluation Matrix (`s2` Balanced Factorial Design)
 
-* Checker check: BFCL's own reference answers pass 200/200.
-* Greedy accuracy 60% [40, 80], reliable accuracy 45% [25, 70], right function chosen in 86% of runs.
-* Failures: wrong value 20%, wrong function 12.5%, missing argument 5%, unparseable ≤2.5%.
-* Function order alone changed correctness on 25% [10, 45] of items (greedy runs).
-* Longest output was 96 tokens, so 128 is enough here; keep watching `truncated_json` with the 3B models.
+To remain within Kaggle's ~30-hour weekly GPU quota while preserving a fully crossed factorial design across all five models and both benchmarks, the main evaluation used the balanced **`s2` design**:
+* **Factors:** 2 sampled seeds (`0, 1` at $T=0.7, p=0.95$) + greedy $\times$ 2 wordings (`w0, w1`) $\times$ 2 orders (`o0, o1`) = **12 runs per item per model** (8 sampled + 4 greedy).
+* **Total Generations Executed:**
+  * MMLU-Pro ($N=300$): $300 \times 12 \times 5 = 18,000$ runs
+  * BFCL v4 "multiple" ($N=100$): $100 \times 12 \times 5 = 6,000$ runs
+  * M1 Prefill Pilot ($N=50$): $50 \times 2 \times 5 = 500$ runs
+  * **Grand Total:** **24,500 GPU generations**
